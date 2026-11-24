@@ -1,0 +1,60 @@
+{
+  "generatedAt": "2026-11-24T13:36:32.3406297Z",
+  "runStartedAt": "2026-11-24T13:36:31.3151277Z",
+  "durationSeconds": 0.5975489,
+  "testMode": "EditMode",
+  "totalTests": 5,
+  "passed": 5,
+  "failed": 0,
+  "skipped": 0,
+  "inconclusive": 0,
+  "status": "passed",
+  "failures": [],
+  "tests": [
+    {
+      "name": "Board_Has20Cards_AsFiveColumnsByFourRows",
+      "fullName": "MemoryMatch.Tests.BoardTests.Board_Has20Cards_AsFiveColumnsByFourRows",
+      "status": "Passed",
+      "duration": 0.0087697,
+      "message": null,
+      "stackTrace": null,
+      "output": "[unity-cli-bridge][TestExecutionHandler] Test started: MemoryMatch.Tests.BoardTests.Board_Has20Cards_AsFiveColumnsByFourRows\r\n"
+    },
+    {
+      "name": "DifferentSeed_GivesDifferentLayout",
+      "fullName": "MemoryMatch.Tests.BoardTests.DifferentSeed_GivesDifferentLayout",
+      "status": "Passed",
+      "duration": 0.0018426,
+      "message": null,
+      "stackTrace": null,
+      "output": "[unity-cli-bridge][TestExecutionHandler] Test started: MemoryMatch.Tests.BoardTests.DifferentSeed_GivesDifferentLayout\r\n"
+    },
+    {
+      "name": "EverySymbol_AppearsExactlyTwice",
+      "fullName": "MemoryMatch.Tests.BoardTests.EverySymbol_AppearsExactlyTwice",
+      "status": "Passed",
+      "duration": 0.0011255,
+      "message": null,
+      "stackTrace": null,
+      "output": "[unity-cli-bridge][TestExecutionHandler] Test started: MemoryMatch.Tests.BoardTests.EverySymbol_AppearsExactlyTwice\r\n"
+    },
+    {
+      "name": "SameSeed_GivesSameLayout",
+      "fullName": "MemoryMatch.Tests.BoardTests.SameSeed_GivesSameLayout",
+      "status": "Passed",
+      "duration": 0.0001278,
+      "message": null,
+      "stackTrace": null,
+      "output": "[unity-cli-bridge][TestExecutionHandler] Test started: MemoryMatch.Tests.BoardTests.SameSeed_GivesSameLayout\r\n"
+    },
+    {
+      "name": "EditModeTestsRun",
+      "fullName": "MemoryMatch.Tests.SetupTests.EditModeTestsRun",
+      "status": "Passed",
+      "duration": 0.0003844,
+      "message": null,
+      "stackTrace": null,
+      "output": "[unity-cli-bridge][TestExecutionHandler] Test started: MemoryMatch.Tests.SetupTests.EditModeTestsRun\r\n"
+    }
+  ]
+}
