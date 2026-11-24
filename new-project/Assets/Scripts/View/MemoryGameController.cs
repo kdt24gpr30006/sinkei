@@ -149,8 +149,7 @@ namespace MemoryMatch
         void OnCardClicked(int index)
         {
             if (game.IsPending || game.Mode == GameMode.None) return;
-            cursorIndex = index;
-            Flip(index, true);   // TryFlipHuman rejects CPU turns, taken/face-up cards and finished games
+            if (Flip(index, true)) cursorIndex = index;
         }
 
         void OnRestartButton()
@@ -186,10 +185,11 @@ namespace MemoryMatch
             cursorIndex = 0; pendingTimer = 0f; cpuTimer = 0f;
         }
 
-        void Flip(int index, bool human)
+        bool Flip(int index, bool human)
         {
             bool ok = human ? game.TryFlipHuman(index) : game.TryFlip(index);
             if (ok) brain.Observe(index, game.VisibleSymbol(index)); // the CPU sees every card that is shown
+            return ok;
         }
 
         void Refresh()
