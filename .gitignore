@@ -45,3 +45,6 @@ hermes-cache/
 # テスト結果
 test-results.xml
 .scratch-results.xml
+
+# unity-cli のスクリーンショット出力(根拠画像は specs/*/evidence/ に置く)
+new-project/.unity/
