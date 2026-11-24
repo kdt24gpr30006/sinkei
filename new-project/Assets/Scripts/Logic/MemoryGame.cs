@@ -63,6 +63,12 @@ namespace MemoryMatch
 
         // Input from a person: rejected while it is the CPU's turn.
         // Same mode, freshly shuffled layout (derived from the current seed, so it is reproducible).
+        // Back to the title screen: no mode, everything cleared.
+        public void ReturnToTitle()
+        {
+            Start(GameMode.None, Seed);
+        }
+
         public void Restart()
         {
             if (Mode == GameMode.None) return;
