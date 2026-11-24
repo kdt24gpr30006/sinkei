@@ -61,6 +61,12 @@ namespace MemoryMatch
             return true;
         }
 
+        // Input from a person: rejected while it is the CPU's turn.
+        public bool TryFlipHuman(int index) { return !IsCpuTurn && TryFlip(index); }
+
+        // What a player can see: the symbol of a face-up card, otherwise -1.
+        public int VisibleSymbol(int index) { return faceUp[index] ? symbols[index] : -1; }
+
         public bool ResolvePending()
         {
             if (!IsPending) return false;
