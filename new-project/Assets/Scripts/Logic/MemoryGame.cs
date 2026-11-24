@@ -57,6 +57,17 @@ namespace MemoryMatch
             FlippedCount++;
             if (FlippedCount == 1) { firstIndex = index; return true; }
             if (symbols[firstIndex] == symbols[index]) Take(firstIndex, index);
+            else IsPending = true;
+            return true;
+        }
+
+        public bool ResolvePending()
+        {
+            if (!IsPending) return false;
+            for (int i = 0; i < CardCount; i++) if (!taken[i]) faceUp[i] = false;
+            FlippedCount = 0;
+            IsPending = false;
+            CurrentPlayer = 1 - CurrentPlayer;
             return true;
         }
 
