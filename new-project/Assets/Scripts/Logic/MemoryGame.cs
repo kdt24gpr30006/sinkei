@@ -67,6 +67,13 @@ namespace MemoryMatch
         // What a player can see: the symbol of a face-up card, otherwise -1.
         public int VisibleSymbol(int index) { return faceUp[index] ? symbols[index] : -1; }
 
+        public static GameResult Decide(int score1, int score2)
+        {
+            if (score1 > score2) return GameResult.Player1Wins;
+            if (score2 > score1) return GameResult.Player2Wins;
+            return GameResult.Draw;
+        }
+
         public bool ResolvePending()
         {
             if (!IsPending) return false;
@@ -84,6 +91,7 @@ namespace MemoryMatch
             scores[CurrentPlayer] += RemainingPairs * PointsPerRemainingPair;
             pairs[CurrentPlayer]++;
             RemainingPairs--;
+            if (RemainingPairs == 0) Result = Decide(scores[0], scores[1]);
             FlippedCount = 0;
         }
 
