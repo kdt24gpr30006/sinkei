@@ -14,6 +14,8 @@ namespace MemoryMatch
         public float cpuDelay = 0.6f;
 
         [Header("State (read-only, for unity-cli)")]
+        public bool onTitle = true;
+        public int titleSelection;         // 0 = 2 Players, 1 = vs CPU
         public string modeName = "None";
         public int currentPlayer;
         public int score1, score2, pairs1, pairs2;
@@ -34,6 +36,8 @@ namespace MemoryMatch
             new Color(0.60f, 0.60f, 0.60f),
         };
         static readonly Color BackColor = new Color(0.15f, 0.27f, 0.50f);
+        static readonly Color ButtonColor = new Color(0.20f, 0.35f, 0.60f);
+        static readonly Color ButtonSelectedColor = new Color(0.90f, 0.70f, 0.15f);
 
         readonly MemoryGame game = new MemoryGame();
         CpuBrain brain = new CpuBrain(0);
@@ -43,6 +47,8 @@ namespace MemoryMatch
         readonly Text[] cardLabels = new Text[MemoryGame.CardCount];
         RectTransform cursorRect;
         Text modeText, turnText, p1Text, p2Text, resultText;
+        GameObject titlePanel, restartButton, titleButton;
+        Image btn2P, btnCpu;
 
         void Awake()
         {
@@ -51,6 +57,8 @@ namespace MemoryMatch
                 var go = GameObject.Find("Card_" + i.ToString("00"));
                 cardImages[i] = go.GetComponent<Image>();
                 cardLabels[i] = go.transform.Find("Label").GetComponent<Text>();
+                int index = i;
+                go.GetComponent<Button>().onClick.AddListener(() => OnCardClicked(index));
             }
             cursorRect = GameObject.Find("Cursor").GetComponent<RectTransform>();
             modeText = GameObject.Find("ModeText").GetComponent<Text>();
@@ -58,13 +66,22 @@ namespace MemoryMatch
             p1Text = GameObject.Find("P1Text").GetComponent<Text>();
             p2Text = GameObject.Find("P2Text").GetComponent<Text>();
             resultText = GameObject.Find("ResultText").GetComponent<Text>();
+
+            titlePanel = GameObject.Find("TitlePanel");
+            restartButton = GameObject.Find("RestartButton");
+            titleButton = GameObject.Find("TitleButton");
+            btn2P = GameObject.Find("Btn2P").GetComponent<Image>();
+            btnCpu = GameObject.Find("BtnCpu").GetComponent<Image>();
+            GameObject.Find("Btn2P").GetComponent<Button>().onClick.AddListener(() => OnTitleButton(GameMode.TwoPlayer));
+            GameObject.Find("BtnCpu").GetComponent<Button>().onClick.AddListener(() => OnTitleButton(GameMode.VsCpu));
+            restartButton.GetComponent<Button>().onClick.AddListener(OnRestartButton);
+            titleButton.GetComponent<Button>().onClick.AddListener(OnTitleScreenButton);
             Refresh();
         }
 
         void Update()
         {
-            var kb = Keyboard.current;
-            if (kb != null && !game.IsPending) HandleKeys(kb);
+            if (!game.IsPending) HandleKeys();
 
             if (game.IsPending)
             {
@@ -84,19 +101,68 @@ namespace MemoryMatch
             Refresh();
         }
 
-        void HandleKeys(Keyboard kb)
+        // True if any keyboard (the real one, or a virtual one) had the key pressed this frame.
+        static bool Pressed(System.Func<Keyboard, bool> pick)
         {
-            if (kb.digit1Key.wasPressedThisFrame || kb.numpad1Key.wasPressedThisFrame) StartGame(GameMode.TwoPlayer);
-            else if (kb.digit2Key.wasPressedThisFrame || kb.numpad2Key.wasPressedThisFrame) StartGame(GameMode.VsCpu);
-            else if (kb.rKey.wasPressedThisFrame) RestartGame();
+            foreach (var device in InputSystem.devices)
+            {
+                var kb = device as Keyboard;
+                if (kb != null && pick(kb)) return true;
+            }
+            return false;
+        }
+
+        void HandleKeys()
+        {
+            if (game.Mode == GameMode.None)
+            {
+                // title screen
+                if (Pressed(k => k.digit1Key.wasPressedThisFrame || k.numpad1Key.wasPressedThisFrame)) StartGame(GameMode.TwoPlayer);
+                else if (Pressed(k => k.digit2Key.wasPressedThisFrame || k.numpad2Key.wasPressedThisFrame)) StartGame(GameMode.VsCpu);
+                else if (Pressed(k => k.upArrowKey.wasPressedThisFrame || k.downArrowKey.wasPressedThisFrame)) titleSelection = 1 - titleSelection;
+                else if (Pressed(k => k.spaceKey.wasPressedThisFrame || k.enterKey.wasPressedThisFrame || k.numpadEnterKey.wasPressedThisFrame))
+                    StartGame(titleSelection == 0 ? GameMode.TwoPlayer : GameMode.VsCpu);
+                return;
+            }
+
+            if (Pressed(k => k.digit1Key.wasPressedThisFrame || k.numpad1Key.wasPressedThisFrame)) StartGame(GameMode.TwoPlayer);
+            else if (Pressed(k => k.digit2Key.wasPressedThisFrame || k.numpad2Key.wasPressedThisFrame)) StartGame(GameMode.VsCpu);
+            else if (Pressed(k => k.rKey.wasPressedThisFrame)) RestartGame();
+            else if (Pressed(k => k.escapeKey.wasPressedThisFrame)) GoToTitle();
 
             if (game.Mode == GameMode.None || game.Result != GameResult.InProgress || game.IsCpuTurn) return;
 
-            if (kb.leftArrowKey.wasPressedThisFrame) cursorIndex = BoardCursor.Move(cursorIndex, -1, 0);
-            if (kb.rightArrowKey.wasPressedThisFrame) cursorIndex = BoardCursor.Move(cursorIndex, 1, 0);
-            if (kb.upArrowKey.wasPressedThisFrame) cursorIndex = BoardCursor.Move(cursorIndex, 0, -1);
-            if (kb.downArrowKey.wasPressedThisFrame) cursorIndex = BoardCursor.Move(cursorIndex, 0, 1);
-            if (kb.spaceKey.wasPressedThisFrame) Flip(cursorIndex, true);
+            if (Pressed(k => k.leftArrowKey.wasPressedThisFrame)) cursorIndex = BoardCursor.Move(cursorIndex, -1, 0);
+            if (Pressed(k => k.rightArrowKey.wasPressedThisFrame)) cursorIndex = BoardCursor.Move(cursorIndex, 1, 0);
+            if (Pressed(k => k.upArrowKey.wasPressedThisFrame)) cursorIndex = BoardCursor.Move(cursorIndex, 0, -1);
+            if (Pressed(k => k.downArrowKey.wasPressedThisFrame)) cursorIndex = BoardCursor.Move(cursorIndex, 0, 1);
+            if (Pressed(k => k.spaceKey.wasPressedThisFrame)) Flip(cursorIndex, true);
+        }
+
+        // ---- mouse / button handlers: ignored while a mismatch is being shown (FR-006) ----
+        void OnTitleButton(GameMode mode)
+        {
+            if (game.IsPending || game.Mode != GameMode.None) return;
+            StartGame(mode);
+        }
+
+        void OnCardClicked(int index)
+        {
+            if (game.IsPending || game.Mode == GameMode.None) return;
+            cursorIndex = index;
+            Flip(index, true);   // TryFlipHuman rejects CPU turns, taken/face-up cards and finished games
+        }
+
+        void OnRestartButton()
+        {
+            if (game.IsPending || game.Mode == GameMode.None) return;
+            RestartGame();
+        }
+
+        void OnTitleScreenButton()
+        {
+            if (game.IsPending || game.Mode == GameMode.None) return;
+            GoToTitle();
         }
 
         void StartGame(GameMode mode)
@@ -111,6 +177,12 @@ namespace MemoryMatch
             if (game.Mode == GameMode.None) return;
             game.Restart();
             brain = new CpuBrain(game.Seed + 1);
+            cursorIndex = 0; pendingTimer = 0f; cpuTimer = 0f;
+        }
+
+        void GoToTitle()
+        {
+            game.ReturnToTitle();
             cursorIndex = 0; pendingTimer = 0f; cpuTimer = 0f;
         }
 
@@ -147,6 +219,7 @@ namespace MemoryMatch
             cardStates = states.ToString();
             visibleSymbols = symbols.ToString();
 
+            onTitle = game.Mode == GameMode.None;
             modeName = game.Mode.ToString();
             currentPlayer = game.CurrentPlayer;
             score1 = game.Score(0);
@@ -158,14 +231,19 @@ namespace MemoryMatch
             flippedCount = game.FlippedCount;
             remainingPairs = game.RemainingPairs;
 
-            cursorRect.gameObject.SetActive(game.Mode != GameMode.None && game.Result == GameResult.InProgress && !game.IsCpuTurn);
+            titlePanel.SetActive(onTitle);
+            restartButton.SetActive(!onTitle);
+            titleButton.SetActive(!onTitle);
+            btn2P.color = titleSelection == 0 ? ButtonSelectedColor : ButtonColor;
+            btnCpu.color = titleSelection == 1 ? ButtonSelectedColor : ButtonColor;
+
+            cursorRect.gameObject.SetActive(!onTitle && game.Result == GameResult.InProgress && !game.IsCpuTurn);
             cursorRect.anchoredPosition = ((RectTransform)cardImages[cursorIndex].transform).anchoredPosition;
 
             string n1 = "Player 1";
             string n2 = game.Mode == GameMode.VsCpu ? "CPU" : "Player 2";
-            if (game.Mode == GameMode.None) modeText.text = "Press 1: 2 Players   2: vs CPU";
-            else modeText.text = game.Mode == GameMode.TwoPlayer ? "2 Players" : "Player vs CPU";
-            if (game.Mode == GameMode.None || game.Result != GameResult.InProgress) turnText.text = "";
+            modeText.text = onTitle ? "" : (game.Mode == GameMode.TwoPlayer ? "2 Players" : "Player vs CPU");
+            if (onTitle || game.Result != GameResult.InProgress) turnText.text = "";
             else turnText.text = (game.CurrentPlayer == 0 ? n1 : n2) + " turn";
             p1Text.text = n1 + "\nPairs " + pairs1 + "\nScore " + score1;
             p2Text.text = n2 + "\nPairs " + pairs2 + "\nScore " + score2;
