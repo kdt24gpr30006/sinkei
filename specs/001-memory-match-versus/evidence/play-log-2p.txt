@@ -1,0 +1,170 @@
+### start with key 1
+mode=TwoPlayer cp=0 s1=0 s2=0 pairs=0/0 rem=10 fc=0 pend=false cur=0 res=InProgress
+  cards=....................
+  vis  =--------------------
+--- step 1: flipped card 0 (player index 0)
+mode=TwoPlayer cp=0 s1=0 s2=0 pairs=0/0 rem=10 fc=1 pend=false cur=0 res=InProgress
+  cards=U...................
+  vis  =C-------------------
+CHECK AS-05 same card as 2nd card: ignored (state unchanged) OK
+--- step 2: flipped card 1 (player index 0)
+mode=TwoPlayer cp=0 s1=0 s2=0 pairs=0/0 rem=10 fc=2 pend=true cur=1 res=InProgress
+  cards=UU..................
+  vis  =CD------------------
+--- step 3: flipped card 1 (player index 1)
+mode=TwoPlayer cp=1 s1=0 s2=0 pairs=0/0 rem=10 fc=1 pend=false cur=1 res=InProgress
+  cards=.U..................
+  vis  =-D------------------
+--- step 4: flipped card 2 (player index 1)
+mode=TwoPlayer cp=1 s1=0 s2=0 pairs=0/0 rem=10 fc=2 pend=true cur=2 res=InProgress
+  cards=.UU.................
+  vis  =-DH-----------------
+--- step 5: flipped card 2 (player index 0)
+mode=TwoPlayer cp=0 s1=0 s2=0 pairs=0/0 rem=10 fc=1 pend=false cur=2 res=InProgress
+  cards=..U.................
+  vis  =--H-----------------
+--- step 6: flipped card 3 (player index 0)
+mode=TwoPlayer cp=0 s1=0 s2=0 pairs=0/0 rem=10 fc=2 pend=true cur=3 res=InProgress
+  cards=..UU................
+  vis  =--HF----------------
+--- step 7: flipped card 3 (player index 1)
+mode=TwoPlayer cp=1 s1=0 s2=0 pairs=0/0 rem=10 fc=1 pend=false cur=3 res=InProgress
+  cards=...U................
+  vis  =---F----------------
+--- step 8: flipped card 4 (player index 1)
+mode=TwoPlayer cp=1 s1=0 s2=0 pairs=0/0 rem=10 fc=2 pend=true cur=4 res=InProgress
+  cards=...UU...............
+  vis  =---FI---------------
+--- step 9: flipped card 4 (player index 0)
+mode=TwoPlayer cp=0 s1=0 s2=0 pairs=0/0 rem=10 fc=1 pend=false cur=4 res=InProgress
+  cards=....U...............
+  vis  =----I---------------
+--- step 10: flipped card 5 (player index 0)
+mode=TwoPlayer cp=0 s1=0 s2=0 pairs=0/0 rem=10 fc=2 pend=true cur=5 res=InProgress
+  cards=....UU..............
+  vis  =----ID--------------
+--- step 11: flipped card 5 (player index 1)
+mode=TwoPlayer cp=1 s1=0 s2=0 pairs=0/0 rem=10 fc=1 pend=false cur=5 res=InProgress
+  cards=.....U..............
+  vis  =-----D--------------
+--- step 12: flipped card 1 (player index 1)
+mode=TwoPlayer cp=1 s1=0 s2=100 pairs=0/1 rem=9 fc=0 pend=false cur=1 res=InProgress
+  cards=.T...T..............
+  vis  =-D---D--------------
+CHECK AS-05 taken card 1: ignored (state unchanged) OK
+--- step 13: flipped card 6 (player index 1)
+mode=TwoPlayer cp=1 s1=0 s2=100 pairs=0/1 rem=9 fc=1 pend=false cur=6 res=InProgress
+  cards=.T...TU.............
+  vis  =-D---DA-------------
+--- step 14: flipped card 7 (player index 1)
+mode=TwoPlayer cp=1 s1=0 s2=100 pairs=0/1 rem=9 fc=2 pend=true cur=7 res=InProgress
+  cards=.T...TUU............
+  vis  =-D---DAJ------------
+--- step 15: flipped card 7 (player index 0)
+mode=TwoPlayer cp=0 s1=0 s2=100 pairs=0/1 rem=9 fc=1 pend=false cur=7 res=InProgress
+  cards=.T...T.U............
+  vis  =-D---D-J------------
+--- step 16: flipped card 8 (player index 0)
+mode=TwoPlayer cp=0 s1=0 s2=100 pairs=0/1 rem=9 fc=2 pend=true cur=8 res=InProgress
+  cards=.T...T.UU...........
+  vis  =-D---D-JF-----------
+--- step 17: flipped card 8 (player index 1)
+mode=TwoPlayer cp=1 s1=0 s2=100 pairs=0/1 rem=9 fc=1 pend=false cur=8 res=InProgress
+  cards=.T...T..U...........
+  vis  =-D---D--F-----------
+--- step 18: flipped card 3 (player index 1)
+mode=TwoPlayer cp=1 s1=0 s2=190 pairs=0/2 rem=8 fc=0 pend=false cur=3 res=InProgress
+  cards=.T.T.T..T...........
+  vis  =-D-F-D--F-----------
+--- step 19: flipped card 9 (player index 1)
+mode=TwoPlayer cp=1 s1=0 s2=190 pairs=0/2 rem=8 fc=1 pend=false cur=9 res=InProgress
+  cards=.T.T.T..TU..........
+  vis  =-D-F-D--FI----------
+--- step 20: flipped card 4 (player index 1)
+mode=TwoPlayer cp=1 s1=0 s2=270 pairs=0/3 rem=7 fc=0 pend=false cur=4 res=InProgress
+  cards=.T.TTT..TT..........
+  vis  =-D-FID--FI----------
+--- step 21: flipped card 10 (player index 1)
+mode=TwoPlayer cp=1 s1=0 s2=270 pairs=0/3 rem=7 fc=1 pend=false cur=10 res=InProgress
+  cards=.T.TTT..TTU.........
+  vis  =-D-FID--FIC---------
+--- step 22: flipped card 0 (player index 1)
+mode=TwoPlayer cp=1 s1=0 s2=340 pairs=0/4 rem=6 fc=0 pend=false cur=0 res=InProgress
+  cards=TT.TTT..TTT.........
+  vis  =CD-FID--FIC---------
+--- step 23: flipped card 11 (player index 1)
+mode=TwoPlayer cp=1 s1=0 s2=340 pairs=0/4 rem=6 fc=1 pend=false cur=11 res=InProgress
+  cards=TT.TTT..TTTU........
+  vis  =CD-FID--FICB--------
+--- step 24: flipped card 12 (player index 1)
+mode=TwoPlayer cp=1 s1=0 s2=340 pairs=0/4 rem=6 fc=2 pend=true cur=12 res=InProgress
+  cards=TT.TTT..TTTUU.......
+  vis  =CD-FID--FICBE-------
+--- step 25: flipped card 12 (player index 0)
+mode=TwoPlayer cp=0 s1=0 s2=340 pairs=0/4 rem=6 fc=1 pend=false cur=12 res=InProgress
+  cards=TT.TTT..TTT.U.......
+  vis  =CD-FID--FIC-E-------
+--- step 26: flipped card 13 (player index 0)
+mode=TwoPlayer cp=0 s1=0 s2=340 pairs=0/4 rem=6 fc=2 pend=true cur=13 res=InProgress
+  cards=TT.TTT..TTT.UU......
+  vis  =CD-FID--FIC-EB------
+--- step 27: flipped card 13 (player index 1)
+mode=TwoPlayer cp=1 s1=0 s2=340 pairs=0/4 rem=6 fc=1 pend=false cur=13 res=InProgress
+  cards=TT.TTT..TTT..U......
+  vis  =CD-FID--FIC--B------
+--- step 28: flipped card 11 (player index 1)
+mode=TwoPlayer cp=1 s1=0 s2=400 pairs=0/5 rem=5 fc=0 pend=false cur=11 res=InProgress
+  cards=TT.TTT..TTTT.T......
+  vis  =CD-FID--FICB-B------
+--- step 29: flipped card 14 (player index 1)
+mode=TwoPlayer cp=1 s1=0 s2=400 pairs=0/5 rem=5 fc=1 pend=false cur=14 res=InProgress
+  cards=TT.TTT..TTTT.TU.....
+  vis  =CD-FID--FICB-BH-----
+--- step 30: flipped card 2 (player index 1)
+mode=TwoPlayer cp=1 s1=0 s2=450 pairs=0/6 rem=4 fc=0 pend=false cur=2 res=InProgress
+  cards=TTTTTT..TTTT.TT.....
+  vis  =CDHFID--FICB-BH-----
+--- step 31: flipped card 15 (player index 1)
+mode=TwoPlayer cp=1 s1=0 s2=450 pairs=0/6 rem=4 fc=1 pend=false cur=15 res=InProgress
+  cards=TTTTTT..TTTT.TTU....
+  vis  =CDHFID--FICB-BHG----
+--- step 32: flipped card 16 (player index 1)
+mode=TwoPlayer cp=1 s1=0 s2=450 pairs=0/6 rem=4 fc=2 pend=true cur=16 res=InProgress
+  cards=TTTTTT..TTTT.TTUU...
+  vis  =CDHFID--FICB-BHGE---
+--- step 33: flipped card 16 (player index 0)
+mode=TwoPlayer cp=0 s1=0 s2=450 pairs=0/6 rem=4 fc=1 pend=false cur=16 res=InProgress
+  cards=TTTTTT..TTTT.TT.U...
+  vis  =CDHFID--FICB-BH-E---
+--- step 34: flipped card 12 (player index 0)
+mode=TwoPlayer cp=0 s1=40 s2=450 pairs=1/6 rem=3 fc=0 pend=false cur=12 res=InProgress
+  cards=TTTTTT..TTTTTTT.T...
+  vis  =CDHFID--FICBEBH-E---
+--- step 35: flipped card 17 (player index 0)
+mode=TwoPlayer cp=0 s1=40 s2=450 pairs=1/6 rem=3 fc=1 pend=false cur=17 res=InProgress
+  cards=TTTTTT..TTTTTTT.TU..
+  vis  =CDHFID--FICBEBH-EG--
+--- step 36: flipped card 15 (player index 0)
+mode=TwoPlayer cp=0 s1=70 s2=450 pairs=2/6 rem=2 fc=0 pend=false cur=15 res=InProgress
+  cards=TTTTTT..TTTTTTTTTT..
+  vis  =CDHFID--FICBEBHGEG--
+--- step 37: flipped card 18 (player index 0)
+mode=TwoPlayer cp=0 s1=70 s2=450 pairs=2/6 rem=2 fc=1 pend=false cur=18 res=InProgress
+  cards=TTTTTT..TTTTTTTTTTU.
+  vis  =CDHFID--FICBEBHGEGJ-
+--- step 38: flipped card 7 (player index 0)
+mode=TwoPlayer cp=0 s1=90 s2=450 pairs=3/6 rem=1 fc=0 pend=false cur=7 res=InProgress
+  cards=TTTTTT.TTTTTTTTTTTT.
+  vis  =CDHFID-JFICBEBHGEGJ-
+--- step 39: flipped card 19 (player index 0)
+mode=TwoPlayer cp=0 s1=90 s2=450 pairs=3/6 rem=1 fc=1 pend=false cur=19 res=InProgress
+  cards=TTTTTT.TTTTTTTTTTTTU
+  vis  =CDHFID-JFICBEBHGEGJA
+--- step 40: flipped card 6 (player index 0)
+mode=TwoPlayer cp=0 s1=100 s2=450 pairs=4/6 rem=0 fc=0 pend=false cur=6 res=Player2Wins
+  cards=TTTTTTTTTTTTTTTTTTTT
+  vis  =CDHFIDAJFICBEBHGEGJA
+### final
+mode=TwoPlayer cp=0 s1=100 s2=450 pairs=4/6 rem=0 fc=0 pend=false cur=6 res=Player2Wins
+  cards=TTTTTTTTTTTTTTTTTTTT
+  vis  =CDHFIDAJFICBEBHGEGJA

@@ -1,0 +1,73 @@
+### start with key 2
+mode=VsCpu cp=0 s1=0 s2=0 pairs=0/0 rem=10 fc=0 pend=false cur=0 res=InProgress
+  cards=....................
+  vis  =--------------------
+--- step 1: flipped card 0 (player index 0)
+mode=VsCpu cp=0 s1=0 s2=0 pairs=0/0 rem=10 fc=1 pend=false cur=0 res=InProgress
+  cards=U...................
+  vis  =C-------------------
+CHECK AS-05 same card as 2nd card: ignored (state unchanged) OK
+--- step 2: flipped card 1 (player index 0)
+mode=VsCpu cp=0 s1=0 s2=0 pairs=0/0 rem=10 fc=2 pend=true cur=1 res=InProgress
+  cards=UU..................
+  vis  =CD------------------
+--- step 3: flipped card 1 (player index 0)
+mode=VsCpu cp=0 s1=0 s2=100 pairs=0/1 rem=9 fc=1 pend=false cur=1 res=InProgress
+  cards=TU........T.........
+  vis  =CD--------C---------
+--- step 4: flipped card 2 (player index 0)
+mode=VsCpu cp=0 s1=0 s2=100 pairs=0/1 rem=9 fc=2 pend=true cur=2 res=InProgress
+  cards=TUU.......T.........
+  vis  =CDH-------C---------
+--- step 5: flipped card 2 (player index 0)
+mode=VsCpu cp=0 s1=0 s2=190 pairs=0/2 rem=8 fc=1 pend=false cur=2 res=InProgress
+  cards=TTU..T....T.........
+  vis  =CDH--D----C---------
+--- step 6: flipped card 3 (player index 0)
+mode=VsCpu cp=0 s1=0 s2=190 pairs=0/2 rem=8 fc=2 pend=true cur=3 res=InProgress
+  cards=TTUU.T....T.........
+  vis  =CDHF-D----C---------
+--- step 7: flipped card 3 (player index 0)
+mode=VsCpu cp=0 s1=0 s2=270 pairs=0/3 rem=7 fc=1 pend=false cur=3 res=InProgress
+  cards=TTTU.T....T...T.....
+  vis  =CDHF-D----C---H-----
+--- step 8: flipped card 4 (player index 0)
+mode=VsCpu cp=0 s1=0 s2=270 pairs=0/3 rem=7 fc=2 pend=true cur=4 res=InProgress
+  cards=TTTUUT....T...T.....
+  vis  =CDHFID----C---H-----
+--- step 9: flipped card 4 (player index 0)
+mode=VsCpu cp=0 s1=0 s2=340 pairs=0/4 rem=6 fc=1 pend=false cur=4 res=InProgress
+  cards=TTTTUT..T.T...T.....
+  vis  =CDHFID--F-C---H-----
+--- step 10: flipped card 6 (player index 0)
+mode=VsCpu cp=0 s1=0 s2=340 pairs=0/4 rem=6 fc=2 pend=true cur=6 res=InProgress
+  cards=TTTTUTU.T.T...T.....
+  vis  =CDHFIDA-F-C---H-----
+--- step 11: flipped card 6 (player index 0)
+mode=VsCpu cp=0 s1=0 s2=340 pairs=0/4 rem=6 fc=1 pend=false cur=6 res=InProgress
+  cards=TTTT.TU.T.T...T.....
+  vis  =CDHF-DA-F-C---H-----
+--- step 12: flipped card 7 (player index 0)
+mode=VsCpu cp=0 s1=0 s2=340 pairs=0/4 rem=6 fc=2 pend=true cur=7 res=InProgress
+  cards=TTTT.TUUT.T...T.....
+  vis  =CDHF-DAJF-C---H-----
+--- step 13: flipped card 7 (player index 0)
+mode=VsCpu cp=0 s1=0 s2=400 pairs=0/5 rem=5 fc=1 pend=false cur=7 res=InProgress
+  cards=TTTTTT.UTTT...T.....
+  vis  =CDHFID-JFIC---H-----
+--- step 14: flipped card 11 (player index 0)
+mode=VsCpu cp=0 s1=0 s2=400 pairs=0/5 rem=5 fc=2 pend=true cur=11 res=InProgress
+  cards=TTTTTT.UTTTU..T.....
+  vis  =CDHFID-JFICB--H-----
+--- step 15: flipped card 12 (player index 0)
+mode=VsCpu cp=0 s1=0 s2=450 pairs=0/6 rem=4 fc=1 pend=false cur=12 res=InProgress
+  cards=TTTTTT..TTTTUTT.....
+  vis  =CDHFID--FICBEBH-----
+--- step 16: flipped card 15 (player index 0)
+mode=VsCpu cp=0 s1=0 s2=450 pairs=0/6 rem=4 fc=2 pend=true cur=15 res=InProgress
+  cards=TTTTTT..TTTTUTTU....
+  vis  =CDHFID--FICBEBHG----
+### final
+mode=VsCpu cp=1 s1=0 s2=550 pairs=0/10 rem=0 fc=0 pend=false cur=15 res=Player2Wins
+  cards=TTTTTTTTTTTTTTTTTTTT
+  vis  =CDHFIDAJFICBEBHGEGJA
