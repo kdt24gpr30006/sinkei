@@ -1,0 +1,3 @@
+[submodule "unity-cli"]
+	path = unity-cli
+	url = https://github.com/akiojin/unity-cli.git
