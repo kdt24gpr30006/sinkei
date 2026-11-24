@@ -61,6 +61,7 @@ namespace MemoryMatch
                 go.GetComponent<Button>().onClick.AddListener(() => OnCardClicked(index));
             }
             cursorRect = GameObject.Find("Cursor").GetComponent<RectTransform>();
+            cursorRect.SetAsFirstSibling(); // behind the cards: shows only as a frame
             modeText = GameObject.Find("ModeText").GetComponent<Text>();
             turnText = GameObject.Find("TurnText").GetComponent<Text>();
             p1Text = GameObject.Find("P1Text").GetComponent<Text>();
@@ -202,15 +203,18 @@ namespace MemoryMatch
                 if (s < 0)
                 {
                     cardImages[i].color = BackColor;
+                    cardLabels[i].color = Color.white;
                     cardLabels[i].text = "?";
                     states.Append('.');
                     symbols.Append('-');
                 }
                 else
                 {
+                    bool taken = game.IsTaken(i);
+                    cardImages[i].color = taken ? new Color(0.78f, 0.80f, 0.84f) : Color.white;
                     var c = Palette[s];
-                    if (game.IsTaken(i)) c = new Color(c.r * 0.6f, c.g * 0.6f, c.b * 0.6f, 1f);
-                    cardImages[i].color = c;
+                    cardLabels[i].color = taken ? new Color(c.r * 0.55f, c.g * 0.55f, c.b * 0.55f) : new Color(c.r * 0.7f, c.g * 0.7f, c.b * 0.7f);
+                    cardLabels[i].fontStyle = FontStyle.Bold;
                     cardLabels[i].text = Letters[s].ToString();
                     states.Append(game.IsTaken(i) ? 'T' : 'U');
                     symbols.Append(Letters[s]);
