@@ -1,22 +1,22 @@
 {
   "editorSessionId": "f129c0a0-0f7a-49f5-9c81-b22cd198f76a",
-  "runId": "89318b51-261c-4266-979d-54bc3f473f61",
+  "runId": "1dd9ca3f-a085-4b90-9403-41d428c20b20",
   "testMode": "EditMode",
   "status": "completed",
-  "runStartedAt": "2026-11-24T13:36:39.3301938Z",
-  "lastUpdate": "2026-11-24T13:36:44.2731594Z",
+  "runStartedAt": "2026-11-24T13:37:31.0727932Z",
+  "lastUpdate": "2026-11-24T13:37:36.3546469Z",
   "code": null,
-  "exportPath": "C:\\Users\\PC_User\\Documents\\sinkei\\new-project\\.unity\\test-results\\TestResults_EditMode_20261124_133639.json",
+  "exportPath": "C:\\Users\\PC_User\\Documents\\sinkei\\new-project\\.unity\\test-results\\TestResults_EditMode_20261124_133731.json",
   "includeDetails": true,
   "completedResult": {
     "status": "completed",
     "success": true,
-    "totalTests": 5,
-    "passedTests": 5,
+    "totalTests": 8,
+    "passedTests": 8,
     "failedTests": 0,
     "skippedTests": 0,
     "inconclusiveTests": 0,
-    "runId": "89318b51-261c-4266-979d-54bc3f473f61",
+    "runId": "1dd9ca3f-a085-4b90-9403-41d428c20b20",
     "testMode": "EditMode",
     "failures": [],
     "tests": [
@@ -24,52 +24,76 @@
         "name": "Board_Has20Cards_AsFiveColumnsByFourRows",
         "fullName": "MemoryMatch.Tests.BoardTests.Board_Has20Cards_AsFiveColumnsByFourRows",
         "status": "Passed",
-        "duration": 0.0001124,
+        "duration": 0.009876,
         "message": null,
-        "output": "[unity-cli-bridge][TestExecutionHandler] Test started: MemoryMatch.Tests.BoardTests.Board_Has20Cards_AsFiveColumnsByFourRows\r\n[unity-cli-bridge][TestExecutionHandler] Test started: MemoryMatch.Tests.BoardTests.Board_Has20Cards_AsFiveColumnsByFourRows\r\n"
+        "output": "[unity-cli-bridge][TestExecutionHandler] Test started: MemoryMatch.Tests.BoardTests.Board_Has20Cards_AsFiveColumnsByFourRows\r\n"
       },
       {
         "name": "DifferentSeed_GivesDifferentLayout",
         "fullName": "MemoryMatch.Tests.BoardTests.DifferentSeed_GivesDifferentLayout",
         "status": "Passed",
-        "duration": 5.58E-05,
+        "duration": 0.0020961,
         "message": null,
-        "output": "[unity-cli-bridge][TestExecutionHandler] Test started: MemoryMatch.Tests.BoardTests.DifferentSeed_GivesDifferentLayout\r\n[unity-cli-bridge][TestExecutionHandler] Test started: MemoryMatch.Tests.BoardTests.DifferentSeed_GivesDifferentLayout\r\n"
+        "output": "[unity-cli-bridge][TestExecutionHandler] Test started: MemoryMatch.Tests.BoardTests.DifferentSeed_GivesDifferentLayout\r\n"
       },
       {
         "name": "EverySymbol_AppearsExactlyTwice",
         "fullName": "MemoryMatch.Tests.BoardTests.EverySymbol_AppearsExactlyTwice",
         "status": "Passed",
-        "duration": 0.0001899,
+        "duration": 0.0012452,
         "message": null,
-        "output": "[unity-cli-bridge][TestExecutionHandler] Test started: MemoryMatch.Tests.BoardTests.EverySymbol_AppearsExactlyTwice\r\n[unity-cli-bridge][TestExecutionHandler] Test started: MemoryMatch.Tests.BoardTests.EverySymbol_AppearsExactlyTwice\r\n"
+        "output": "[unity-cli-bridge][TestExecutionHandler] Test started: MemoryMatch.Tests.BoardTests.EverySymbol_AppearsExactlyTwice\r\n"
       },
       {
         "name": "SameSeed_GivesSameLayout",
         "fullName": "MemoryMatch.Tests.BoardTests.SameSeed_GivesSameLayout",
         "status": "Passed",
-        "duration": 6.17E-05,
+        "duration": 0.000158,
         "message": null,
-        "output": "[unity-cli-bridge][TestExecutionHandler] Test started: MemoryMatch.Tests.BoardTests.SameSeed_GivesSameLayout\r\n[unity-cli-bridge][TestExecutionHandler] Test started: MemoryMatch.Tests.BoardTests.SameSeed_GivesSameLayout\r\n"
+        "output": "[unity-cli-bridge][TestExecutionHandler] Test started: MemoryMatch.Tests.BoardTests.SameSeed_GivesSameLayout\r\n"
+      },
+      {
+        "name": "AfterStart_BoardIsInInitialState(TwoPlayer)",
+        "fullName": "MemoryMatch.Tests.InitialStateTests.AfterStart_BoardIsInInitialState(TwoPlayer)",
+        "status": "Passed",
+        "duration": 0.0017524,
+        "message": null,
+        "output": "[unity-cli-bridge][TestExecutionHandler] Test started: MemoryMatch.Tests.InitialStateTests.AfterStart_BoardIsInInitialState(TwoPlayer)\r\n"
+      },
+      {
+        "name": "AfterStart_BoardIsInInitialState(VsCpu)",
+        "fullName": "MemoryMatch.Tests.InitialStateTests.AfterStart_BoardIsInInitialState(VsCpu)",
+        "status": "Passed",
+        "duration": 0.0001053,
+        "message": null,
+        "output": "[unity-cli-bridge][TestExecutionHandler] Test started: MemoryMatch.Tests.InitialStateTests.AfterStart_BoardIsInInitialState(VsCpu)\r\n"
+      },
+      {
+        "name": "BeforeStart_ModeIsNone",
+        "fullName": "MemoryMatch.Tests.InitialStateTests.BeforeStart_ModeIsNone",
+        "status": "Passed",
+        "duration": 0.0001152,
+        "message": null,
+        "output": "[unity-cli-bridge][TestExecutionHandler] Test started: MemoryMatch.Tests.InitialStateTests.BeforeStart_ModeIsNone\r\n"
       },
       {
         "name": "EditModeTestsRun",
         "fullName": "MemoryMatch.Tests.SetupTests.EditModeTestsRun",
         "status": "Passed",
-        "duration": 5.01E-05,
+        "duration": 0.0004602,
         "message": null,
-        "output": "[unity-cli-bridge][TestExecutionHandler] Test started: MemoryMatch.Tests.SetupTests.EditModeTestsRun\r\n[unity-cli-bridge][TestExecutionHandler] Test started: MemoryMatch.Tests.SetupTests.EditModeTestsRun\r\n"
+        "output": "[unity-cli-bridge][TestExecutionHandler] Test started: MemoryMatch.Tests.SetupTests.EditModeTestsRun\r\n"
       }
     ]
   },
-  "lastResultPath": "C:\\Users\\PC_User\\Documents\\sinkei\\new-project\\.unity\\test-results\\TestResults_EditMode_20261124_133639.json",
+  "lastResultPath": "C:\\Users\\PC_User\\Documents\\sinkei\\new-project\\.unity\\test-results\\TestResults_EditMode_20261124_133731.json",
   "lastResultSummary": {
-    "generatedAt": "2026-11-24T13:36:44.2721535Z",
-    "runStartedAt": "2026-11-24T13:36:43.2667561Z",
-    "durationSeconds": 0.5996519,
+    "generatedAt": "2026-11-24T13:37:36.3499657Z",
+    "runStartedAt": "2026-11-24T13:37:35.1097064Z",
+    "durationSeconds": 0.7968327,
     "testMode": "EditMode",
-    "totalTests": 5,
-    "passed": 5,
+    "totalTests": 8,
+    "passed": 8,
     "failed": 0,
     "skipped": 0,
     "inconclusive": 0,
@@ -80,50 +104,77 @@
         "name": "Board_Has20Cards_AsFiveColumnsByFourRows",
         "fullName": "MemoryMatch.Tests.BoardTests.Board_Has20Cards_AsFiveColumnsByFourRows",
         "status": "Passed",
-        "duration": 0.0001124,
+        "duration": 0.009876,
         "message": null,
         "stackTrace": null,
-        "output": "[unity-cli-bridge][TestExecutionHandler] Test started: MemoryMatch.Tests.BoardTests.Board_Has20Cards_AsFiveColumnsByFourRows\r\n[unity-cli-bridge][TestExecutionHandler] Test started: MemoryMatch.Tests.BoardTests.Board_Has20Cards_AsFiveColumnsByFourRows\r\n"
+        "output": "[unity-cli-bridge][TestExecutionHandler] Test started: MemoryMatch.Tests.BoardTests.Board_Has20Cards_AsFiveColumnsByFourRows\r\n"
       },
       {
         "name": "DifferentSeed_GivesDifferentLayout",
         "fullName": "MemoryMatch.Tests.BoardTests.DifferentSeed_GivesDifferentLayout",
         "status": "Passed",
-        "duration": 5.58E-05,
+        "duration": 0.0020961,
         "message": null,
         "stackTrace": null,
-        "output": "[unity-cli-bridge][TestExecutionHandler] Test started: MemoryMatch.Tests.BoardTests.DifferentSeed_GivesDifferentLayout\r\n[unity-cli-bridge][TestExecutionHandler] Test started: MemoryMatch.Tests.BoardTests.DifferentSeed_GivesDifferentLayout\r\n"
+        "output": "[unity-cli-bridge][TestExecutionHandler] Test started: MemoryMatch.Tests.BoardTests.DifferentSeed_GivesDifferentLayout\r\n"
       },
       {
         "name": "EverySymbol_AppearsExactlyTwice",
         "fullName": "MemoryMatch.Tests.BoardTests.EverySymbol_AppearsExactlyTwice",
         "status": "Passed",
-        "duration": 0.0001899,
+        "duration": 0.0012452,
         "message": null,
         "stackTrace": null,
-        "output": "[unity-cli-bridge][TestExecutionHandler] Test started: MemoryMatch.Tests.BoardTests.EverySymbol_AppearsExactlyTwice\r\n[unity-cli-bridge][TestExecutionHandler] Test started: MemoryMatch.Tests.BoardTests.EverySymbol_AppearsExactlyTwice\r\n"
+        "output": "[unity-cli-bridge][TestExecutionHandler] Test started: MemoryMatch.Tests.BoardTests.EverySymbol_AppearsExactlyTwice\r\n"
       },
       {
         "name": "SameSeed_GivesSameLayout",
         "fullName": "MemoryMatch.Tests.BoardTests.SameSeed_GivesSameLayout",
         "status": "Passed",
-        "duration": 6.17E-05,
+        "duration": 0.000158,
         "message": null,
         "stackTrace": null,
-        "output": "[unity-cli-bridge][TestExecutionHandler] Test started: MemoryMatch.Tests.BoardTests.SameSeed_GivesSameLayout\r\n[unity-cli-bridge][TestExecutionHandler] Test started: MemoryMatch.Tests.BoardTests.SameSeed_GivesSameLayout\r\n"
+        "output": "[unity-cli-bridge][TestExecutionHandler] Test started: MemoryMatch.Tests.BoardTests.SameSeed_GivesSameLayout\r\n"
+      },
+      {
+        "name": "AfterStart_BoardIsInInitialState(TwoPlayer)",
+        "fullName": "MemoryMatch.Tests.InitialStateTests.AfterStart_BoardIsInInitialState(TwoPlayer)",
+        "status": "Passed",
+        "duration": 0.0017524,
+        "message": null,
+        "stackTrace": null,
+        "output": "[unity-cli-bridge][TestExecutionHandler] Test started: MemoryMatch.Tests.InitialStateTests.AfterStart_BoardIsInInitialState(TwoPlayer)\r\n"
+      },
+      {
+        "name": "AfterStart_BoardIsInInitialState(VsCpu)",
+        "fullName": "MemoryMatch.Tests.InitialStateTests.AfterStart_BoardIsInInitialState(VsCpu)",
+        "status": "Passed",
+        "duration": 0.0001053,
+        "message": null,
+        "stackTrace": null,
+        "output": "[unity-cli-bridge][TestExecutionHandler] Test started: MemoryMatch.Tests.InitialStateTests.AfterStart_BoardIsInInitialState(VsCpu)\r\n"
+      },
+      {
+        "name": "BeforeStart_ModeIsNone",
+        "fullName": "MemoryMatch.Tests.InitialStateTests.BeforeStart_ModeIsNone",
+        "status": "Passed",
+        "duration": 0.0001152,
+        "message": null,
+        "stackTrace": null,
+        "output": "[unity-cli-bridge][TestExecutionHandler] Test started: MemoryMatch.Tests.InitialStateTests.BeforeStart_ModeIsNone\r\n"
       },
       {
         "name": "EditModeTestsRun",
         "fullName": "MemoryMatch.Tests.SetupTests.EditModeTestsRun",
         "status": "Passed",
-        "duration": 5.01E-05,
+        "duration": 0.0004602,
         "message": null,
         "stackTrace": null,
-        "output": "[unity-cli-bridge][TestExecutionHandler] Test started: MemoryMatch.Tests.SetupTests.EditModeTestsRun\r\n[unity-cli-bridge][TestExecutionHandler] Test started: MemoryMatch.Tests.SetupTests.EditModeTestsRun\r\n"
+        "output": "[unity-cli-bridge][TestExecutionHandler] Test started: MemoryMatch.Tests.SetupTests.EditModeTestsRun\r\n"
       }
     ]
   },
-  "lastResultTimestampUtc": "2026-11-24T13:36:44.2731594Z",
+  "lastResultTimestampUtc": "2026-11-24T13:37:36.3546469Z",
   "playModeOptionsPatched": false,
   "prevEnterPlayModeOptionsEnabled": false,
   "prevEnterPlayModeOptions": 0

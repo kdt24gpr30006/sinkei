@@ -1,0 +1,136 @@
+{
+  "generatedAt": "2026-11-24T13:37:11.6413435Z",
+  "runStartedAt": "2026-11-24T13:37:10.4183609Z",
+  "durationSeconds": 0.7989198,
+  "testMode": "EditMode",
+  "totalTests": 8,
+  "passed": 6,
+  "failed": 2,
+  "skipped": 0,
+  "inconclusive": 0,
+  "status": "failed",
+  "failures": [
+    {
+      "name": "AfterStart_BoardIsInInitialState(TwoPlayer)",
+      "fullName": "MemoryMatch.Tests.InitialStateTests.AfterStart_BoardIsInInitialState(TwoPlayer)",
+      "message": "System.NotImplementedException : The method or operation is not implemented.",
+      "stackTrace": "  at MemoryMatch.Tests.InitialStateTests.AfterStart_BoardIsInInitialState (MemoryMatch.GameMode mode) [0x00028] in C:\\Users\\PC_User\\Documents\\sinkei\\new-project\\Assets\\Tests\\EditMode\\InitialStateTests.cs:24 \r\n  at (wrapper managed-to-native) System.Reflection.RuntimeMethodInfo.InternalInvoke(System.Reflection.RuntimeMethodInfo,object,object[],System.Exception&)\r\n  at System.Reflection.RuntimeMethodInfo.Invoke (System.Object obj, System.Reflection.BindingFlags invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo culture) [0x0006a] in <a8858c8db8794c73aac95c6a07c9f981>:0 "
+    },
+    {
+      "name": "AfterStart_BoardIsInInitialState(VsCpu)",
+      "fullName": "MemoryMatch.Tests.InitialStateTests.AfterStart_BoardIsInInitialState(VsCpu)",
+      "message": "System.NotImplementedException : The method or operation is not implemented.",
+      "stackTrace": "  at MemoryMatch.Tests.InitialStateTests.AfterStart_BoardIsInInitialState (MemoryMatch.GameMode mode) [0x00028] in C:\\Users\\PC_User\\Documents\\sinkei\\new-project\\Assets\\Tests\\EditMode\\InitialStateTests.cs:24 \r\n  at (wrapper managed-to-native) System.Reflection.RuntimeMethodInfo.InternalInvoke(System.Reflection.RuntimeMethodInfo,object,object[],System.Exception&)\r\n  at System.Reflection.RuntimeMethodInfo.Invoke (System.Object obj, System.Reflection.BindingFlags invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo culture) [0x0006a] in <a8858c8db8794c73aac95c6a07c9f981>:0 "
+    },
+    {
+      "name": "new-project",
+      "fullName": "new-project",
+      "message": "One or more child tests had errors",
+      "stackTrace": null
+    },
+    {
+      "name": "MemoryMatch.Tests.dll",
+      "fullName": "C:/Users/PC_User/Documents/sinkei/new-project/Library/ScriptAssemblies/MemoryMatch.Tests.dll",
+      "message": "One or more child tests had errors",
+      "stackTrace": null
+    },
+    {
+      "name": "MemoryMatch",
+      "fullName": "MemoryMatch",
+      "message": "One or more child tests had errors",
+      "stackTrace": null
+    },
+    {
+      "name": "Tests",
+      "fullName": "MemoryMatch.Tests",
+      "message": "One or more child tests had errors",
+      "stackTrace": null
+    },
+    {
+      "name": "InitialStateTests",
+      "fullName": "MemoryMatch.Tests.InitialStateTests",
+      "message": "One or more child tests had errors",
+      "stackTrace": null
+    },
+    {
+      "name": "AfterStart_BoardIsInInitialState",
+      "fullName": "MemoryMatch.Tests.InitialStateTests.AfterStart_BoardIsInInitialState",
+      "message": "One or more child tests had errors",
+      "stackTrace": null
+    }
+  ],
+  "tests": [
+    {
+      "name": "Board_Has20Cards_AsFiveColumnsByFourRows",
+      "fullName": "MemoryMatch.Tests.BoardTests.Board_Has20Cards_AsFiveColumnsByFourRows",
+      "status": "Passed",
+      "duration": 0.0095565,
+      "message": null,
+      "stackTrace": null,
+      "output": "[unity-cli-bridge][TestExecutionHandler] Test started: MemoryMatch.Tests.BoardTests.Board_Has20Cards_AsFiveColumnsByFourRows\r\n"
+    },
+    {
+      "name": "DifferentSeed_GivesDifferentLayout",
+      "fullName": "MemoryMatch.Tests.BoardTests.DifferentSeed_GivesDifferentLayout",
+      "status": "Passed",
+      "duration": 0.0016526,
+      "message": null,
+      "stackTrace": null,
+      "output": "[unity-cli-bridge][TestExecutionHandler] Test started: MemoryMatch.Tests.BoardTests.DifferentSeed_GivesDifferentLayout\r\n"
+    },
+    {
+      "name": "EverySymbol_AppearsExactlyTwice",
+      "fullName": "MemoryMatch.Tests.BoardTests.EverySymbol_AppearsExactlyTwice",
+      "status": "Passed",
+      "duration": 0.0010233,
+      "message": null,
+      "stackTrace": null,
+      "output": "[unity-cli-bridge][TestExecutionHandler] Test started: MemoryMatch.Tests.BoardTests.EverySymbol_AppearsExactlyTwice\r\n"
+    },
+    {
+      "name": "SameSeed_GivesSameLayout",
+      "fullName": "MemoryMatch.Tests.BoardTests.SameSeed_GivesSameLayout",
+      "status": "Passed",
+      "duration": 0.0001161,
+      "message": null,
+      "stackTrace": null,
+      "output": "[unity-cli-bridge][TestExecutionHandler] Test started: MemoryMatch.Tests.BoardTests.SameSeed_GivesSameLayout\r\n"
+    },
+    {
+      "name": "AfterStart_BoardIsInInitialState(TwoPlayer)",
+      "fullName": "MemoryMatch.Tests.InitialStateTests.AfterStart_BoardIsInInitialState(TwoPlayer)",
+      "status": "Failed",
+      "duration": 0.0041721,
+      "message": "System.NotImplementedException : The method or operation is not implemented.",
+      "stackTrace": "  at MemoryMatch.Tests.InitialStateTests.AfterStart_BoardIsInInitialState (MemoryMatch.GameMode mode) [0x00028] in C:\\Users\\PC_User\\Documents\\sinkei\\new-project\\Assets\\Tests\\EditMode\\InitialStateTests.cs:24 \r\n  at (wrapper managed-to-native) System.Reflection.RuntimeMethodInfo.InternalInvoke(System.Reflection.RuntimeMethodInfo,object,object[],System.Exception&)\r\n  at System.Reflection.RuntimeMethodInfo.Invoke (System.Object obj, System.Reflection.BindingFlags invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo culture) [0x0006a] in <a8858c8db8794c73aac95c6a07c9f981>:0 ",
+      "output": "[unity-cli-bridge][TestExecutionHandler] Test started: MemoryMatch.Tests.InitialStateTests.AfterStart_BoardIsInInitialState(TwoPlayer)\r\n"
+    },
+    {
+      "name": "AfterStart_BoardIsInInitialState(VsCpu)",
+      "fullName": "MemoryMatch.Tests.InitialStateTests.AfterStart_BoardIsInInitialState(VsCpu)",
+      "status": "Failed",
+      "duration": 0.000213,
+      "message": "System.NotImplementedException : The method or operation is not implemented.",
+      "stackTrace": "  at MemoryMatch.Tests.InitialStateTests.AfterStart_BoardIsInInitialState (MemoryMatch.GameMode mode) [0x00028] in C:\\Users\\PC_User\\Documents\\sinkei\\new-project\\Assets\\Tests\\EditMode\\InitialStateTests.cs:24 \r\n  at (wrapper managed-to-native) System.Reflection.RuntimeMethodInfo.InternalInvoke(System.Reflection.RuntimeMethodInfo,object,object[],System.Exception&)\r\n  at System.Reflection.RuntimeMethodInfo.Invoke (System.Object obj, System.Reflection.BindingFlags invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo culture) [0x0006a] in <a8858c8db8794c73aac95c6a07c9f981>:0 ",
+      "output": "[unity-cli-bridge][TestExecutionHandler] Test started: MemoryMatch.Tests.InitialStateTests.AfterStart_BoardIsInInitialState(VsCpu)\r\n"
+    },
+    {
+      "name": "BeforeStart_ModeIsNone",
+      "fullName": "MemoryMatch.Tests.InitialStateTests.BeforeStart_ModeIsNone",
+      "status": "Passed",
+      "duration": 0.0001754,
+      "message": null,
+      "stackTrace": null,
+      "output": "[unity-cli-bridge][TestExecutionHandler] Test started: MemoryMatch.Tests.InitialStateTests.BeforeStart_ModeIsNone\r\n"
+    },
+    {
+      "name": "EditModeTestsRun",
+      "fullName": "MemoryMatch.Tests.SetupTests.EditModeTestsRun",
+      "status": "Passed",
+      "duration": 0.0008066,
+      "message": null,
+      "stackTrace": null,
+      "output": "[unity-cli-bridge][TestExecutionHandler] Test started: MemoryMatch.Tests.SetupTests.EditModeTestsRun\r\n"
+    }
+  ]
+}

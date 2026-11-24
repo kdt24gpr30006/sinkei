@@ -10,15 +10,40 @@ namespace MemoryMatch
         public const int PairCount = CardCount / 2;
 
         readonly int[] symbols = new int[CardCount];
+        readonly bool[] faceUp = new bool[CardCount];
+        readonly bool[] taken = new bool[CardCount];
+        readonly int[] scores = new int[2];
+        readonly int[] pairs = new int[2];
 
         public GameMode Mode { get; private set; }
         public int Seed { get; private set; }
+
+        public int CurrentPlayer { get; private set; }
+        public GameResult Result { get; private set; }
+        public int RemainingPairs { get; private set; }
+        public int FlippedCount { get; private set; }
+        public bool IsPending { get; private set; }
+        public bool IsCpuTurn { get { return Mode == GameMode.VsCpu && CurrentPlayer == 1; } }
+
+        public bool IsFaceUp(int index) { return faceUp[index]; }
+        public bool IsTaken(int index) { return taken[index]; }
+        public int Score(int player) { return scores[player]; }
+        public int Pairs(int player) { return pairs[player]; }
 
         public void Start(GameMode mode, int seed)
         {
             Mode = mode;
             Seed = seed;
             Shuffle(seed);
+            Array.Clear(faceUp, 0, CardCount);
+            Array.Clear(taken, 0, CardCount);
+            Array.Clear(scores, 0, scores.Length);
+            Array.Clear(pairs, 0, pairs.Length);
+            CurrentPlayer = 0;
+            Result = GameResult.InProgress;
+            RemainingPairs = PairCount;
+            FlippedCount = 0;
+            IsPending = false;
         }
 
         void Shuffle(int seed)
