@@ -46,6 +46,16 @@ namespace MemoryMatch
             IsPending = false;
         }
 
+        public bool TryFlip(int index)
+        {
+            if (Mode == GameMode.None || Result != GameResult.InProgress || IsPending) return false;
+            if (index < 0 || index >= CardCount) return false;
+            if (taken[index] || faceUp[index] || FlippedCount >= 2) return false;
+            faceUp[index] = true;
+            FlippedCount++;
+            return true;
+        }
+
         void Shuffle(int seed)
         {
             for (int i = 0; i < CardCount; i++) symbols[i] = i / 2;
