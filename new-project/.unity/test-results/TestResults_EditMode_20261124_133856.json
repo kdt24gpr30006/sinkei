@@ -1,0 +1,247 @@
+{
+  "generatedAt": "2026-11-24T13:39:02.5995326Z",
+  "runStartedAt": "2026-11-24T13:39:01.0737069Z",
+  "durationSeconds": 1.0936475,
+  "testMode": "EditMode",
+  "totalTests": 19,
+  "passed": 14,
+  "failed": 5,
+  "skipped": 0,
+  "inconclusive": 0,
+  "status": "failed",
+  "failures": [
+    {
+      "name": "FirstPair_Scores100",
+      "fullName": "MemoryMatch.Tests.MatchTests.FirstPair_Scores100",
+      "message": "  Expected: 100\r\n  But was:  0\r\n",
+      "stackTrace": "at MemoryMatch.Tests.MatchTests.FirstPair_Scores100 () [0x00023] in C:\\Users\\PC_User\\Documents\\sinkei\\new-project\\Assets\\Tests\\EditMode\\MatchTests.cs:34\r\n"
+    },
+    {
+      "name": "MatchingPair_IsTakenAndStaysFaceUp",
+      "fullName": "MemoryMatch.Tests.MatchTests.MatchingPair_IsTakenAndStaysFaceUp",
+      "message": "  Expected: True\r\n  But was:  False\r\n",
+      "stackTrace": "at MemoryMatch.Tests.MatchTests.MatchingPair_IsTakenAndStaysFaceUp () [0x0002b] in C:\\Users\\PC_User\\Documents\\sinkei\\new-project\\Assets\\Tests\\EditMode\\MatchTests.cs:17\r\n"
+    },
+    {
+      "name": "PointsFollowRemainingPairs_100DownTo10",
+      "fullName": "MemoryMatch.Tests.MatchTests.PointsFollowRemainingPairs_100DownTo10",
+      "message": "  after pair 0\r\n  Expected: 100\r\n  But was:  0\r\n",
+      "stackTrace": "at MemoryMatch.Tests.MatchTests.PointsFollowRemainingPairs_100DownTo10 () [0x00034] in C:\\Users\\PC_User\\Documents\\sinkei\\new-project\\Assets\\Tests\\EditMode\\MatchTests.cs:78\r\n"
+    },
+    {
+      "name": "SamePlayer_ContinuesAfterMatch",
+      "fullName": "MemoryMatch.Tests.MatchTests.SamePlayer_ContinuesAfterMatch",
+      "message": "  Expected: True\r\n  But was:  False\r\n",
+      "stackTrace": "at MemoryMatch.Tests.MatchTests.SamePlayer_ContinuesAfterMatch () [0x00044] in C:\\Users\\PC_User\\Documents\\sinkei\\new-project\\Assets\\Tests\\EditMode\\MatchTests.cs:48\r\n"
+    },
+    {
+      "name": "TakenCard_CannotBeChosenAgain",
+      "fullName": "MemoryMatch.Tests.MatchTests.TakenCard_CannotBeChosenAgain",
+      "message": "  Expected: 0\r\n  But was:  2\r\n",
+      "stackTrace": "at MemoryMatch.Tests.MatchTests.TakenCard_CannotBeChosenAgain () [0x0003b] in C:\\Users\\PC_User\\Documents\\sinkei\\new-project\\Assets\\Tests\\EditMode\\MatchTests.cs:63\r\n"
+    },
+    {
+      "name": "new-project",
+      "fullName": "new-project",
+      "message": "One or more child tests had errors",
+      "stackTrace": null
+    },
+    {
+      "name": "MemoryMatch.Tests.dll",
+      "fullName": "C:/Users/PC_User/Documents/sinkei/new-project/Library/ScriptAssemblies/MemoryMatch.Tests.dll",
+      "message": "One or more child tests had errors",
+      "stackTrace": null
+    },
+    {
+      "name": "MemoryMatch",
+      "fullName": "MemoryMatch",
+      "message": "One or more child tests had errors",
+      "stackTrace": null
+    },
+    {
+      "name": "Tests",
+      "fullName": "MemoryMatch.Tests",
+      "message": "One or more child tests had errors",
+      "stackTrace": null
+    },
+    {
+      "name": "MatchTests",
+      "fullName": "MemoryMatch.Tests.MatchTests",
+      "message": "One or more child tests had errors",
+      "stackTrace": null
+    }
+  ],
+  "tests": [
+    {
+      "name": "Board_Has20Cards_AsFiveColumnsByFourRows",
+      "fullName": "MemoryMatch.Tests.BoardTests.Board_Has20Cards_AsFiveColumnsByFourRows",
+      "status": "Passed",
+      "duration": 0.0089532,
+      "message": null,
+      "stackTrace": null,
+      "output": "[unity-cli-bridge][TestExecutionHandler] Test started: MemoryMatch.Tests.BoardTests.Board_Has20Cards_AsFiveColumnsByFourRows\r\n"
+    },
+    {
+      "name": "DifferentSeed_GivesDifferentLayout",
+      "fullName": "MemoryMatch.Tests.BoardTests.DifferentSeed_GivesDifferentLayout",
+      "status": "Passed",
+      "duration": 0.001851,
+      "message": null,
+      "stackTrace": null,
+      "output": "[unity-cli-bridge][TestExecutionHandler] Test started: MemoryMatch.Tests.BoardTests.DifferentSeed_GivesDifferentLayout\r\n"
+    },
+    {
+      "name": "EverySymbol_AppearsExactlyTwice",
+      "fullName": "MemoryMatch.Tests.BoardTests.EverySymbol_AppearsExactlyTwice",
+      "status": "Passed",
+      "duration": 0.0011286,
+      "message": null,
+      "stackTrace": null,
+      "output": "[unity-cli-bridge][TestExecutionHandler] Test started: MemoryMatch.Tests.BoardTests.EverySymbol_AppearsExactlyTwice\r\n"
+    },
+    {
+      "name": "SameSeed_GivesSameLayout",
+      "fullName": "MemoryMatch.Tests.BoardTests.SameSeed_GivesSameLayout",
+      "status": "Passed",
+      "duration": 0.0001271,
+      "message": null,
+      "stackTrace": null,
+      "output": "[unity-cli-bridge][TestExecutionHandler] Test started: MemoryMatch.Tests.BoardTests.SameSeed_GivesSameLayout\r\n"
+    },
+    {
+      "name": "BeforeStart_NothingCanBeFlipped",
+      "fullName": "MemoryMatch.Tests.FlipRuleTests.BeforeStart_NothingCanBeFlipped",
+      "status": "Passed",
+      "duration": 0.0004869,
+      "message": null,
+      "stackTrace": null,
+      "output": "[unity-cli-bridge][TestExecutionHandler] Test started: MemoryMatch.Tests.FlipRuleTests.BeforeStart_NothingCanBeFlipped\r\n"
+    },
+    {
+      "name": "FirstFlip_TurnsCardFaceUp",
+      "fullName": "MemoryMatch.Tests.FlipRuleTests.FirstFlip_TurnsCardFaceUp",
+      "status": "Passed",
+      "duration": 0.0003206,
+      "message": null,
+      "stackTrace": null,
+      "output": "[unity-cli-bridge][TestExecutionHandler] Test started: MemoryMatch.Tests.FlipRuleTests.FirstFlip_TurnsCardFaceUp\r\n"
+    },
+    {
+      "name": "OutOfRangeIndex_IsRejected(-1)",
+      "fullName": "MemoryMatch.Tests.FlipRuleTests.OutOfRangeIndex_IsRejected(-1)",
+      "status": "Passed",
+      "duration": 0.0002639,
+      "message": null,
+      "stackTrace": null,
+      "output": "[unity-cli-bridge][TestExecutionHandler] Test started: MemoryMatch.Tests.FlipRuleTests.OutOfRangeIndex_IsRejected(-1)\r\n"
+    },
+    {
+      "name": "OutOfRangeIndex_IsRejected(20)",
+      "fullName": "MemoryMatch.Tests.FlipRuleTests.OutOfRangeIndex_IsRejected(20)",
+      "status": "Passed",
+      "duration": 4.6E-05,
+      "message": null,
+      "stackTrace": null,
+      "output": "[unity-cli-bridge][TestExecutionHandler] Test started: MemoryMatch.Tests.FlipRuleTests.OutOfRangeIndex_IsRejected(20)\r\n"
+    },
+    {
+      "name": "SameCard_CannotBeChosenAsSecondCard",
+      "fullName": "MemoryMatch.Tests.FlipRuleTests.SameCard_CannotBeChosenAsSecondCard",
+      "status": "Passed",
+      "duration": 0.0001457,
+      "message": null,
+      "stackTrace": null,
+      "output": "[unity-cli-bridge][TestExecutionHandler] Test started: MemoryMatch.Tests.FlipRuleTests.SameCard_CannotBeChosenAsSecondCard\r\n"
+    },
+    {
+      "name": "ThirdCard_CannotBeFlipped_AfterTwoMismatchedCards",
+      "fullName": "MemoryMatch.Tests.FlipRuleTests.ThirdCard_CannotBeFlipped_AfterTwoMismatchedCards",
+      "status": "Passed",
+      "duration": 0.0002091,
+      "message": null,
+      "stackTrace": null,
+      "output": "[unity-cli-bridge][TestExecutionHandler] Test started: MemoryMatch.Tests.FlipRuleTests.ThirdCard_CannotBeFlipped_AfterTwoMismatchedCards\r\n"
+    },
+    {
+      "name": "AfterStart_BoardIsInInitialState(TwoPlayer)",
+      "fullName": "MemoryMatch.Tests.InitialStateTests.AfterStart_BoardIsInInitialState(TwoPlayer)",
+      "status": "Passed",
+      "duration": 0.0014487,
+      "message": null,
+      "stackTrace": null,
+      "output": "[unity-cli-bridge][TestExecutionHandler] Test started: MemoryMatch.Tests.InitialStateTests.AfterStart_BoardIsInInitialState(TwoPlayer)\r\n"
+    },
+    {
+      "name": "AfterStart_BoardIsInInitialState(VsCpu)",
+      "fullName": "MemoryMatch.Tests.InitialStateTests.AfterStart_BoardIsInInitialState(VsCpu)",
+      "status": "Passed",
+      "duration": 0.0001327,
+      "message": null,
+      "stackTrace": null,
+      "output": "[unity-cli-bridge][TestExecutionHandler] Test started: MemoryMatch.Tests.InitialStateTests.AfterStart_BoardIsInInitialState(VsCpu)\r\n"
+    },
+    {
+      "name": "BeforeStart_ModeIsNone",
+      "fullName": "MemoryMatch.Tests.InitialStateTests.BeforeStart_ModeIsNone",
+      "status": "Passed",
+      "duration": 0.0001709,
+      "message": null,
+      "stackTrace": null,
+      "output": "[unity-cli-bridge][TestExecutionHandler] Test started: MemoryMatch.Tests.InitialStateTests.BeforeStart_ModeIsNone\r\n"
+    },
+    {
+      "name": "FirstPair_Scores100",
+      "fullName": "MemoryMatch.Tests.MatchTests.FirstPair_Scores100",
+      "status": "Failed",
+      "duration": 0.0050525,
+      "message": "  Expected: 100\r\n  But was:  0\r\n",
+      "stackTrace": "at MemoryMatch.Tests.MatchTests.FirstPair_Scores100 () [0x00023] in C:\\Users\\PC_User\\Documents\\sinkei\\new-project\\Assets\\Tests\\EditMode\\MatchTests.cs:34\r\n",
+      "output": "[unity-cli-bridge][TestExecutionHandler] Test started: MemoryMatch.Tests.MatchTests.FirstPair_Scores100\r\n"
+    },
+    {
+      "name": "MatchingPair_IsTakenAndStaysFaceUp",
+      "fullName": "MemoryMatch.Tests.MatchTests.MatchingPair_IsTakenAndStaysFaceUp",
+      "status": "Failed",
+      "duration": 0.0005363,
+      "message": "  Expected: True\r\n  But was:  False\r\n",
+      "stackTrace": "at MemoryMatch.Tests.MatchTests.MatchingPair_IsTakenAndStaysFaceUp () [0x0002b] in C:\\Users\\PC_User\\Documents\\sinkei\\new-project\\Assets\\Tests\\EditMode\\MatchTests.cs:17\r\n",
+      "output": "[unity-cli-bridge][TestExecutionHandler] Test started: MemoryMatch.Tests.MatchTests.MatchingPair_IsTakenAndStaysFaceUp\r\n"
+    },
+    {
+      "name": "PointsFollowRemainingPairs_100DownTo10",
+      "fullName": "MemoryMatch.Tests.MatchTests.PointsFollowRemainingPairs_100DownTo10",
+      "status": "Failed",
+      "duration": 0.0006245,
+      "message": "  after pair 0\r\n  Expected: 100\r\n  But was:  0\r\n",
+      "stackTrace": "at MemoryMatch.Tests.MatchTests.PointsFollowRemainingPairs_100DownTo10 () [0x00034] in C:\\Users\\PC_User\\Documents\\sinkei\\new-project\\Assets\\Tests\\EditMode\\MatchTests.cs:78\r\n",
+      "output": "[unity-cli-bridge][TestExecutionHandler] Test started: MemoryMatch.Tests.MatchTests.PointsFollowRemainingPairs_100DownTo10\r\n"
+    },
+    {
+      "name": "SamePlayer_ContinuesAfterMatch",
+      "fullName": "MemoryMatch.Tests.MatchTests.SamePlayer_ContinuesAfterMatch",
+      "status": "Failed",
+      "duration": 0.0003031,
+      "message": "  Expected: True\r\n  But was:  False\r\n",
+      "stackTrace": "at MemoryMatch.Tests.MatchTests.SamePlayer_ContinuesAfterMatch () [0x00044] in C:\\Users\\PC_User\\Documents\\sinkei\\new-project\\Assets\\Tests\\EditMode\\MatchTests.cs:48\r\n",
+      "output": "[unity-cli-bridge][TestExecutionHandler] Test started: MemoryMatch.Tests.MatchTests.SamePlayer_ContinuesAfterMatch\r\n"
+    },
+    {
+      "name": "TakenCard_CannotBeChosenAgain",
+      "fullName": "MemoryMatch.Tests.MatchTests.TakenCard_CannotBeChosenAgain",
+      "status": "Failed",
+      "duration": 0.0002696,
+      "message": "  Expected: 0\r\n  But was:  2\r\n",
+      "stackTrace": "at MemoryMatch.Tests.MatchTests.TakenCard_CannotBeChosenAgain () [0x0003b] in C:\\Users\\PC_User\\Documents\\sinkei\\new-project\\Assets\\Tests\\EditMode\\MatchTests.cs:63\r\n",
+      "output": "[unity-cli-bridge][TestExecutionHandler] Test started: MemoryMatch.Tests.MatchTests.TakenCard_CannotBeChosenAgain\r\n"
+    },
+    {
+      "name": "EditModeTestsRun",
+      "fullName": "MemoryMatch.Tests.SetupTests.EditModeTestsRun",
+      "status": "Passed",
+      "duration": 0.0001355,
+      "message": null,
+      "stackTrace": null,
+      "output": "[unity-cli-bridge][TestExecutionHandler] Test started: MemoryMatch.Tests.SetupTests.EditModeTestsRun\r\n"
+    }
+  ]
+}

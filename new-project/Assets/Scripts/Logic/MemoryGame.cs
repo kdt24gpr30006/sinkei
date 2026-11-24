@@ -8,12 +8,14 @@ namespace MemoryMatch
         public const int Rows = 4;
         public const int CardCount = Columns * Rows;
         public const int PairCount = CardCount / 2;
+        public const int PointsPerRemainingPair = 10;
 
         readonly int[] symbols = new int[CardCount];
         readonly bool[] faceUp = new bool[CardCount];
         readonly bool[] taken = new bool[CardCount];
         readonly int[] scores = new int[2];
         readonly int[] pairs = new int[2];
+        int firstIndex;
 
         public GameMode Mode { get; private set; }
         public int Seed { get; private set; }
@@ -53,7 +55,19 @@ namespace MemoryMatch
             if (taken[index] || faceUp[index] || FlippedCount >= 2) return false;
             faceUp[index] = true;
             FlippedCount++;
+            if (FlippedCount == 1) { firstIndex = index; return true; }
+            if (symbols[firstIndex] == symbols[index]) Take(firstIndex, index);
             return true;
+        }
+
+        void Take(int a, int b)
+        {
+            taken[a] = true;
+            taken[b] = true;
+            scores[CurrentPlayer] += RemainingPairs * PointsPerRemainingPair;
+            pairs[CurrentPlayer]++;
+            RemainingPairs--;
+            FlippedCount = 0;
         }
 
         void Shuffle(int seed)
