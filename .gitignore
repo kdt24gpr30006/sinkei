@@ -41,3 +41,7 @@ hermes-cache/
 # 課題資料(リポジトリに含めない)
 *.pptx
 条件.txt
+
+# テスト結果
+test-results.xml
+.scratch-results.xml

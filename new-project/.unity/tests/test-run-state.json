@@ -1,0 +1,62 @@
+{
+  "editorSessionId": "f129c0a0-0f7a-49f5-9c81-b22cd198f76a",
+  "runId": "800931c4-9656-4e58-acf7-4be1fc1f2f50",
+  "testMode": "EditMode",
+  "status": "completed",
+  "runStartedAt": "2026-11-24T13:35:04.2713464Z",
+  "lastUpdate": "2026-11-24T13:35:09.1133345Z",
+  "code": null,
+  "exportPath": "C:\\Users\\PC_User\\Documents\\sinkei\\new-project\\.unity\\test-results\\TestResults_EditMode_20261124_133504.json",
+  "includeDetails": true,
+  "completedResult": {
+    "status": "completed",
+    "success": true,
+    "totalTests": 1,
+    "passedTests": 1,
+    "failedTests": 0,
+    "skippedTests": 0,
+    "inconclusiveTests": 0,
+    "runId": "800931c4-9656-4e58-acf7-4be1fc1f2f50",
+    "testMode": "EditMode",
+    "failures": [],
+    "tests": [
+      {
+        "name": "EditModeTestsRun",
+        "fullName": "MemoryMatch.Tests.SetupTests.EditModeTestsRun",
+        "status": "Passed",
+        "duration": 5.07E-05,
+        "message": null,
+        "output": "[unity-cli-bridge][TestExecutionHandler] Test started: MemoryMatch.Tests.SetupTests.EditModeTestsRun\r\n[unity-cli-bridge][TestExecutionHandler] Test started: MemoryMatch.Tests.SetupTests.EditModeTestsRun\r\n"
+      }
+    ]
+  },
+  "lastResultPath": "C:\\Users\\PC_User\\Documents\\sinkei\\new-project\\.unity\\test-results\\TestResults_EditMode_20261124_133504.json",
+  "lastResultSummary": {
+    "generatedAt": "2026-11-24T13:35:09.1123197Z",
+    "runStartedAt": "2026-11-24T13:35:08.2100904Z",
+    "durationSeconds": 0.5051797,
+    "testMode": "EditMode",
+    "totalTests": 1,
+    "passed": 1,
+    "failed": 0,
+    "skipped": 0,
+    "inconclusive": 0,
+    "status": "passed",
+    "failures": [],
+    "tests": [
+      {
+        "name": "EditModeTestsRun",
+        "fullName": "MemoryMatch.Tests.SetupTests.EditModeTestsRun",
+        "status": "Passed",
+        "duration": 5.07E-05,
+        "message": null,
+        "stackTrace": null,
+        "output": "[unity-cli-bridge][TestExecutionHandler] Test started: MemoryMatch.Tests.SetupTests.EditModeTestsRun\r\n[unity-cli-bridge][TestExecutionHandler] Test started: MemoryMatch.Tests.SetupTests.EditModeTestsRun\r\n"
+      }
+    ]
+  },
+  "lastResultTimestampUtc": "2026-11-24T13:35:09.1133345Z",
+  "playModeOptionsPatched": false,
+  "prevEnterPlayModeOptionsEnabled": false,
+  "prevEnterPlayModeOptions": 0
+}
