@@ -31,7 +31,7 @@
 
 ## Phase 5: タイトル画面とマウス操作(2026-11-24 追加、SPECの FR-004・FR-015・FR-016 / AS-12・AS-15〜AS-17)
 
-- [ ] **T-15** [FR-016 / AS-17 / UT-09] 失敗テスト: `MemoryGame.ReturnToTitle()` でモードが `None` に戻り、カードの状態・得点が初期化され、`TryFlip` が失敗し、`Restart` が何もせず、その後 `Start` で新しく始められる。最小実装。
-- [ ] **T-16** [FR-004, FR-015, FR-016 / AS-15〜AS-17] シーンに EventSystem(Input System 用)、タイトル画面(ゲーム名、「2 Players」「vs CPU」ボタン)、各カードのボタン、「Restart」「Title」ボタンを配置する。Hierarchyを再取得し、タイトルとゲーム画面のGame画像を取得する。ロジックへの接続には進まない。
+- [x] **T-15** [FR-016 / AS-17 / UT-09] 失敗テスト: `MemoryGame.ReturnToTitle()` でモードが `None` に戻り、カードの状態・得点が初期化され、`TryFlip` が失敗し、`Restart` が何もせず、その後 `Start` で新しく始められる。最小実装。
+- [x] **T-16** [FR-004, FR-015, FR-016 / AS-15〜AS-17] シーンに EventSystem(Input System 用)、タイトル画面(ゲーム名、「2 Players」「vs CPU」ボタン)、各カードのボタン、「Restart」「Title」ボタンを配置する。Hierarchyを再取得し、タイトルとゲーム画面のGame画像を取得する。ロジックへの接続には進まない。
 - [ ] **T-17** [FR-004, FR-015, FR-016] コントローラに、タイトル表示の切替、上下キー+Space/Enter、Esc、ボタンのクリック、カードのクリックを接続する。コンパイルエラー0、全EditModeテストが合格、シーン保存。
 - [ ] **T-18** AS-12・AS-15〜AS-17 と、既存の AS-01〜AS-14 の回帰を `verification.md` に追記し、実機のキー・マウスが入る状態(Unity再起動後)での確認をあなたに依頼する。push する。
