@@ -62,6 +62,13 @@ namespace MemoryMatch
         }
 
         // Input from a person: rejected while it is the CPU's turn.
+        // Same mode, freshly shuffled layout (derived from the current seed, so it is reproducible).
+        public void Restart()
+        {
+            if (Mode == GameMode.None) return;
+            Start(Mode, new Random(Seed ^ 0x5bd1e995).Next());
+        }
+
         public bool TryFlipHuman(int index) { return !IsCpuTurn && TryFlip(index); }
 
         // What a player can see: the symbol of a face-up card, otherwise -1.

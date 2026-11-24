@@ -1,0 +1,456 @@
+{
+  "generatedAt": "2026-11-24T13:44:57.2854379Z",
+  "runStartedAt": "2026-11-24T13:44:55.2357437Z",
+  "durationSeconds": 1.5948917,
+  "testMode": "EditMode",
+  "totalTests": 49,
+  "passed": 49,
+  "failed": 0,
+  "skipped": 0,
+  "inconclusive": 0,
+  "status": "passed",
+  "failures": [],
+  "tests": [
+    {
+      "name": "Board_Has20Cards_AsFiveColumnsByFourRows",
+      "fullName": "MemoryMatch.Tests.BoardTests.Board_Has20Cards_AsFiveColumnsByFourRows",
+      "status": "Passed",
+      "duration": 0.0084925,
+      "message": null,
+      "stackTrace": null,
+      "output": "[unity-cli-bridge][TestExecutionHandler] Test started: MemoryMatch.Tests.BoardTests.Board_Has20Cards_AsFiveColumnsByFourRows\r\n"
+    },
+    {
+      "name": "DifferentSeed_GivesDifferentLayout",
+      "fullName": "MemoryMatch.Tests.BoardTests.DifferentSeed_GivesDifferentLayout",
+      "status": "Passed",
+      "duration": 0.0018298,
+      "message": null,
+      "stackTrace": null,
+      "output": "[unity-cli-bridge][TestExecutionHandler] Test started: MemoryMatch.Tests.BoardTests.DifferentSeed_GivesDifferentLayout\r\n"
+    },
+    {
+      "name": "EverySymbol_AppearsExactlyTwice",
+      "fullName": "MemoryMatch.Tests.BoardTests.EverySymbol_AppearsExactlyTwice",
+      "status": "Passed",
+      "duration": 0.0010456,
+      "message": null,
+      "stackTrace": null,
+      "output": "[unity-cli-bridge][TestExecutionHandler] Test started: MemoryMatch.Tests.BoardTests.EverySymbol_AppearsExactlyTwice\r\n"
+    },
+    {
+      "name": "SameSeed_GivesSameLayout",
+      "fullName": "MemoryMatch.Tests.BoardTests.SameSeed_GivesSameLayout",
+      "status": "Passed",
+      "duration": 0.0001217,
+      "message": null,
+      "stackTrace": null,
+      "output": "[unity-cli-bridge][TestExecutionHandler] Test started: MemoryMatch.Tests.BoardTests.SameSeed_GivesSameLayout\r\n"
+    },
+    {
+      "name": "FirstCard_KnownPairIsChosen",
+      "fullName": "MemoryMatch.Tests.CpuChoiceTests.FirstCard_KnownPairIsChosen",
+      "status": "Passed",
+      "duration": 0.0027354,
+      "message": null,
+      "stackTrace": null,
+      "output": "[unity-cli-bridge][TestExecutionHandler] Test started: MemoryMatch.Tests.CpuChoiceTests.FirstCard_KnownPairIsChosen\r\n"
+    },
+    {
+      "name": "FirstCard_PrefersUnknownCardOverKnownSingle",
+      "fullName": "MemoryMatch.Tests.CpuChoiceTests.FirstCard_PrefersUnknownCardOverKnownSingle",
+      "status": "Passed",
+      "duration": 0.0006372,
+      "message": null,
+      "stackTrace": null,
+      "output": "[unity-cli-bridge][TestExecutionHandler] Test started: MemoryMatch.Tests.CpuChoiceTests.FirstCard_PrefersUnknownCardOverKnownSingle\r\n"
+    },
+    {
+      "name": "HumanInput_IsRejectedOnCpuTurn_ButCpuCanFlip",
+      "fullName": "MemoryMatch.Tests.CpuChoiceTests.HumanInput_IsRejectedOnCpuTurn_ButCpuCanFlip",
+      "status": "Passed",
+      "duration": 0.0006584,
+      "message": null,
+      "stackTrace": null,
+      "output": "[unity-cli-bridge][TestExecutionHandler] Test started: MemoryMatch.Tests.CpuChoiceTests.HumanInput_IsRejectedOnCpuTurn_ButCpuCanFlip\r\n"
+    },
+    {
+      "name": "NeverChoosesTakenOrFaceUpCards",
+      "fullName": "MemoryMatch.Tests.CpuChoiceTests.NeverChoosesTakenOrFaceUpCards",
+      "status": "Passed",
+      "duration": 0.0003441,
+      "message": null,
+      "stackTrace": null,
+      "output": "[unity-cli-bridge][TestExecutionHandler] Test started: MemoryMatch.Tests.CpuChoiceTests.NeverChoosesTakenOrFaceUpCards\r\n"
+    },
+    {
+      "name": "SecondCard_KnownPartnerIsChosen",
+      "fullName": "MemoryMatch.Tests.CpuChoiceTests.SecondCard_KnownPartnerIsChosen",
+      "status": "Passed",
+      "duration": 0.0002113,
+      "message": null,
+      "stackTrace": null,
+      "output": "[unity-cli-bridge][TestExecutionHandler] Test started: MemoryMatch.Tests.CpuChoiceTests.SecondCard_KnownPartnerIsChosen\r\n"
+    },
+    {
+      "name": "SecondCard_WithUnknownPartner_PicksAnotherUnknownCard",
+      "fullName": "MemoryMatch.Tests.CpuChoiceTests.SecondCard_WithUnknownPartner_PicksAnotherUnknownCard",
+      "status": "Passed",
+      "duration": 0.000567,
+      "message": null,
+      "stackTrace": null,
+      "output": "[unity-cli-bridge][TestExecutionHandler] Test started: MemoryMatch.Tests.CpuChoiceTests.SecondCard_WithUnknownPartner_PicksAnotherUnknownCard\r\n"
+    },
+    {
+      "name": "TwoPlayerMode_BothPlayersAreHuman",
+      "fullName": "MemoryMatch.Tests.CpuChoiceTests.TwoPlayerMode_BothPlayersAreHuman",
+      "status": "Passed",
+      "duration": 0.0001502,
+      "message": null,
+      "stackTrace": null,
+      "output": "[unity-cli-bridge][TestExecutionHandler] Test started: MemoryMatch.Tests.CpuChoiceTests.TwoPlayerMode_BothPlayersAreHuman\r\n"
+    },
+    {
+      "name": "VisibleSymbol_IsHiddenForFaceDownCards",
+      "fullName": "MemoryMatch.Tests.CpuChoiceTests.VisibleSymbol_IsHiddenForFaceDownCards",
+      "status": "Passed",
+      "duration": 0.0001359,
+      "message": null,
+      "stackTrace": null,
+      "output": "[unity-cli-bridge][TestExecutionHandler] Test started: MemoryMatch.Tests.CpuChoiceTests.VisibleSymbol_IsHiddenForFaceDownCards\r\n"
+    },
+    {
+      "name": "ChanceOne_AlwaysRemembers_ChanceZero_NeverRemembers",
+      "fullName": "MemoryMatch.Tests.CpuMemoryTests.ChanceOne_AlwaysRemembers_ChanceZero_NeverRemembers",
+      "status": "Passed",
+      "duration": 0.0006972,
+      "message": null,
+      "stackTrace": null,
+      "output": "[unity-cli-bridge][TestExecutionHandler] Test started: MemoryMatch.Tests.CpuMemoryTests.ChanceOne_AlwaysRemembers_ChanceZero_NeverRemembers\r\n"
+    },
+    {
+      "name": "DefaultRememberChance_Is70Percent",
+      "fullName": "MemoryMatch.Tests.CpuMemoryTests.DefaultRememberChance_Is70Percent",
+      "status": "Passed",
+      "duration": 0.0006945,
+      "message": null,
+      "stackTrace": null,
+      "output": "[unity-cli-bridge][TestExecutionHandler] Test started: MemoryMatch.Tests.CpuMemoryTests.DefaultRememberChance_Is70Percent\r\n"
+    },
+    {
+      "name": "ObservedCard_IsRememberedAboutSeventyPercentOfTheTime",
+      "fullName": "MemoryMatch.Tests.CpuMemoryTests.ObservedCard_IsRememberedAboutSeventyPercentOfTheTime",
+      "status": "Passed",
+      "duration": 0.0048065,
+      "message": null,
+      "stackTrace": null,
+      "output": "[unity-cli-bridge][TestExecutionHandler] Test started: MemoryMatch.Tests.CpuMemoryTests.ObservedCard_IsRememberedAboutSeventyPercentOfTheTime\r\n"
+    },
+    {
+      "name": "SameSeed_GivesSameMemory",
+      "fullName": "MemoryMatch.Tests.CpuMemoryTests.SameSeed_GivesSameMemory",
+      "status": "Passed",
+      "duration": 0.0016502,
+      "message": null,
+      "stackTrace": null,
+      "output": "[unity-cli-bridge][TestExecutionHandler] Test started: MemoryMatch.Tests.CpuMemoryTests.SameSeed_GivesSameMemory\r\n"
+    },
+    {
+      "name": "UnobservedCard_IsNotKnown",
+      "fullName": "MemoryMatch.Tests.CpuMemoryTests.UnobservedCard_IsNotKnown",
+      "status": "Passed",
+      "duration": 0.0001458,
+      "message": null,
+      "stackTrace": null,
+      "output": "[unity-cli-bridge][TestExecutionHandler] Test started: MemoryMatch.Tests.CpuMemoryTests.UnobservedCard_IsNotKnown\r\n"
+    },
+    {
+      "name": "BeforeStart_NothingCanBeFlipped",
+      "fullName": "MemoryMatch.Tests.FlipRuleTests.BeforeStart_NothingCanBeFlipped",
+      "status": "Passed",
+      "duration": 0.000136,
+      "message": null,
+      "stackTrace": null,
+      "output": "[unity-cli-bridge][TestExecutionHandler] Test started: MemoryMatch.Tests.FlipRuleTests.BeforeStart_NothingCanBeFlipped\r\n"
+    },
+    {
+      "name": "FirstFlip_TurnsCardFaceUp",
+      "fullName": "MemoryMatch.Tests.FlipRuleTests.FirstFlip_TurnsCardFaceUp",
+      "status": "Passed",
+      "duration": 0.0001925,
+      "message": null,
+      "stackTrace": null,
+      "output": "[unity-cli-bridge][TestExecutionHandler] Test started: MemoryMatch.Tests.FlipRuleTests.FirstFlip_TurnsCardFaceUp\r\n"
+    },
+    {
+      "name": "OutOfRangeIndex_IsRejected(-1)",
+      "fullName": "MemoryMatch.Tests.FlipRuleTests.OutOfRangeIndex_IsRejected(-1)",
+      "status": "Passed",
+      "duration": 0.0002853,
+      "message": null,
+      "stackTrace": null,
+      "output": "[unity-cli-bridge][TestExecutionHandler] Test started: MemoryMatch.Tests.FlipRuleTests.OutOfRangeIndex_IsRejected(-1)\r\n"
+    },
+    {
+      "name": "OutOfRangeIndex_IsRejected(20)",
+      "fullName": "MemoryMatch.Tests.FlipRuleTests.OutOfRangeIndex_IsRejected(20)",
+      "status": "Passed",
+      "duration": 4.86E-05,
+      "message": null,
+      "stackTrace": null,
+      "output": "[unity-cli-bridge][TestExecutionHandler] Test started: MemoryMatch.Tests.FlipRuleTests.OutOfRangeIndex_IsRejected(20)\r\n"
+    },
+    {
+      "name": "SameCard_CannotBeChosenAsSecondCard",
+      "fullName": "MemoryMatch.Tests.FlipRuleTests.SameCard_CannotBeChosenAsSecondCard",
+      "status": "Passed",
+      "duration": 0.0001519,
+      "message": null,
+      "stackTrace": null,
+      "output": "[unity-cli-bridge][TestExecutionHandler] Test started: MemoryMatch.Tests.FlipRuleTests.SameCard_CannotBeChosenAsSecondCard\r\n"
+    },
+    {
+      "name": "ThirdCard_CannotBeFlipped_AfterTwoMismatchedCards",
+      "fullName": "MemoryMatch.Tests.FlipRuleTests.ThirdCard_CannotBeFlipped_AfterTwoMismatchedCards",
+      "status": "Passed",
+      "duration": 0.00016,
+      "message": null,
+      "stackTrace": null,
+      "output": "[unity-cli-bridge][TestExecutionHandler] Test started: MemoryMatch.Tests.FlipRuleTests.ThirdCard_CannotBeFlipped_AfterTwoMismatchedCards\r\n"
+    },
+    {
+      "name": "AfterStart_BoardIsInInitialState(TwoPlayer)",
+      "fullName": "MemoryMatch.Tests.InitialStateTests.AfterStart_BoardIsInInitialState(TwoPlayer)",
+      "status": "Passed",
+      "duration": 0.0006198,
+      "message": null,
+      "stackTrace": null,
+      "output": "[unity-cli-bridge][TestExecutionHandler] Test started: MemoryMatch.Tests.InitialStateTests.AfterStart_BoardIsInInitialState(TwoPlayer)\r\n"
+    },
+    {
+      "name": "AfterStart_BoardIsInInitialState(VsCpu)",
+      "fullName": "MemoryMatch.Tests.InitialStateTests.AfterStart_BoardIsInInitialState(VsCpu)",
+      "status": "Passed",
+      "duration": 0.0001436,
+      "message": null,
+      "stackTrace": null,
+      "output": "[unity-cli-bridge][TestExecutionHandler] Test started: MemoryMatch.Tests.InitialStateTests.AfterStart_BoardIsInInitialState(VsCpu)\r\n"
+    },
+    {
+      "name": "BeforeStart_ModeIsNone",
+      "fullName": "MemoryMatch.Tests.InitialStateTests.BeforeStart_ModeIsNone",
+      "status": "Passed",
+      "duration": 0.0001306,
+      "message": null,
+      "stackTrace": null,
+      "output": "[unity-cli-bridge][TestExecutionHandler] Test started: MemoryMatch.Tests.InitialStateTests.BeforeStart_ModeIsNone\r\n"
+    },
+    {
+      "name": "FirstPair_Scores100",
+      "fullName": "MemoryMatch.Tests.MatchTests.FirstPair_Scores100",
+      "status": "Passed",
+      "duration": 0.0002828,
+      "message": null,
+      "stackTrace": null,
+      "output": "[unity-cli-bridge][TestExecutionHandler] Test started: MemoryMatch.Tests.MatchTests.FirstPair_Scores100\r\n"
+    },
+    {
+      "name": "MatchingPair_IsTakenAndStaysFaceUp",
+      "fullName": "MemoryMatch.Tests.MatchTests.MatchingPair_IsTakenAndStaysFaceUp",
+      "status": "Passed",
+      "duration": 0.0003763,
+      "message": null,
+      "stackTrace": null,
+      "output": "[unity-cli-bridge][TestExecutionHandler] Test started: MemoryMatch.Tests.MatchTests.MatchingPair_IsTakenAndStaysFaceUp\r\n"
+    },
+    {
+      "name": "PointsFollowRemainingPairs_100DownTo10",
+      "fullName": "MemoryMatch.Tests.MatchTests.PointsFollowRemainingPairs_100DownTo10",
+      "status": "Passed",
+      "duration": 0.0003598,
+      "message": null,
+      "stackTrace": null,
+      "output": "[unity-cli-bridge][TestExecutionHandler] Test started: MemoryMatch.Tests.MatchTests.PointsFollowRemainingPairs_100DownTo10\r\n"
+    },
+    {
+      "name": "SamePlayer_ContinuesAfterMatch",
+      "fullName": "MemoryMatch.Tests.MatchTests.SamePlayer_ContinuesAfterMatch",
+      "status": "Passed",
+      "duration": 0.0002677,
+      "message": null,
+      "stackTrace": null,
+      "output": "[unity-cli-bridge][TestExecutionHandler] Test started: MemoryMatch.Tests.MatchTests.SamePlayer_ContinuesAfterMatch\r\n"
+    },
+    {
+      "name": "TakenCard_CannotBeChosenAgain",
+      "fullName": "MemoryMatch.Tests.MatchTests.TakenCard_CannotBeChosenAgain",
+      "status": "Passed",
+      "duration": 0.0002308,
+      "message": null,
+      "stackTrace": null,
+      "output": "[unity-cli-bridge][TestExecutionHandler] Test started: MemoryMatch.Tests.MatchTests.TakenCard_CannotBeChosenAgain\r\n"
+    },
+    {
+      "name": "Mismatch_BecomesPending_CardsStayFaceUp_ScoreUnchanged",
+      "fullName": "MemoryMatch.Tests.MismatchTests.Mismatch_BecomesPending_CardsStayFaceUp_ScoreUnchanged",
+      "status": "Passed",
+      "duration": 0.0002914,
+      "message": null,
+      "stackTrace": null,
+      "output": "[unity-cli-bridge][TestExecutionHandler] Test started: MemoryMatch.Tests.MismatchTests.Mismatch_BecomesPending_CardsStayFaceUp_ScoreUnchanged\r\n"
+    },
+    {
+      "name": "ResolvePending_FlipsBackAndPassesTheTurn",
+      "fullName": "MemoryMatch.Tests.MismatchTests.ResolvePending_FlipsBackAndPassesTheTurn",
+      "status": "Passed",
+      "duration": 0.0002334,
+      "message": null,
+      "stackTrace": null,
+      "output": "[unity-cli-bridge][TestExecutionHandler] Test started: MemoryMatch.Tests.MismatchTests.ResolvePending_FlipsBackAndPassesTheTurn\r\n"
+    },
+    {
+      "name": "ResolvePending_WithoutPending_DoesNothing",
+      "fullName": "MemoryMatch.Tests.MismatchTests.ResolvePending_WithoutPending_DoesNothing",
+      "status": "Passed",
+      "duration": 0.0001608,
+      "message": null,
+      "stackTrace": null,
+      "output": "[unity-cli-bridge][TestExecutionHandler] Test started: MemoryMatch.Tests.MismatchTests.ResolvePending_WithoutPending_DoesNothing\r\n"
+    },
+    {
+      "name": "SecondPlayer_ScoresOnMatch_AndKeepsTheTurn",
+      "fullName": "MemoryMatch.Tests.MismatchTests.SecondPlayer_ScoresOnMatch_AndKeepsTheTurn",
+      "status": "Passed",
+      "duration": 0.000172,
+      "message": null,
+      "stackTrace": null,
+      "output": "[unity-cli-bridge][TestExecutionHandler] Test started: MemoryMatch.Tests.MismatchTests.SecondPlayer_ScoresOnMatch_AndKeepsTheTurn\r\n"
+    },
+    {
+      "name": "SecondPlayerMismatch_PassesTurnBackToFirstPlayer",
+      "fullName": "MemoryMatch.Tests.MismatchTests.SecondPlayerMismatch_PassesTurnBackToFirstPlayer",
+      "status": "Passed",
+      "duration": 0.0001423,
+      "message": null,
+      "stackTrace": null,
+      "output": "[unity-cli-bridge][TestExecutionHandler] Test started: MemoryMatch.Tests.MismatchTests.SecondPlayerMismatch_PassesTurnBackToFirstPlayer\r\n"
+    },
+    {
+      "name": "WhilePending_NoCardCanBeFlipped",
+      "fullName": "MemoryMatch.Tests.MismatchTests.WhilePending_NoCardCanBeFlipped",
+      "status": "Passed",
+      "duration": 0.0002432,
+      "message": null,
+      "stackTrace": null,
+      "output": "[unity-cli-bridge][TestExecutionHandler] Test started: MemoryMatch.Tests.MismatchTests.WhilePending_NoCardCanBeFlipped\r\n"
+    },
+    {
+      "name": "Restart_AfterTheGameEnded_StartsANewGame",
+      "fullName": "MemoryMatch.Tests.RestartTests.Restart_AfterTheGameEnded_StartsANewGame",
+      "status": "Passed",
+      "duration": 0.0007268,
+      "message": null,
+      "stackTrace": null,
+      "output": "[unity-cli-bridge][TestExecutionHandler] Test started: MemoryMatch.Tests.RestartTests.Restart_AfterTheGameEnded_StartsANewGame\r\n"
+    },
+    {
+      "name": "Restart_BeforeAnyModeIsChosen_DoesNothing",
+      "fullName": "MemoryMatch.Tests.RestartTests.Restart_BeforeAnyModeIsChosen_DoesNothing",
+      "status": "Passed",
+      "duration": 0.0001404,
+      "message": null,
+      "stackTrace": null,
+      "output": "[unity-cli-bridge][TestExecutionHandler] Test started: MemoryMatch.Tests.RestartTests.Restart_BeforeAnyModeIsChosen_DoesNothing\r\n"
+    },
+    {
+      "name": "Restart_MidGame_ResetsEverythingAndKeepsTheMode",
+      "fullName": "MemoryMatch.Tests.RestartTests.Restart_MidGame_ResetsEverythingAndKeepsTheMode",
+      "status": "Passed",
+      "duration": 0.0001762,
+      "message": null,
+      "stackTrace": null,
+      "output": "[unity-cli-bridge][TestExecutionHandler] Test started: MemoryMatch.Tests.RestartTests.Restart_MidGame_ResetsEverythingAndKeepsTheMode\r\n"
+    },
+    {
+      "name": "Restart_ReshufflesTheLayout_Reproducibly",
+      "fullName": "MemoryMatch.Tests.RestartTests.Restart_ReshufflesTheLayout_Reproducibly",
+      "status": "Passed",
+      "duration": 0.0002365,
+      "message": null,
+      "stackTrace": null,
+      "output": "[unity-cli-bridge][TestExecutionHandler] Test started: MemoryMatch.Tests.RestartTests.Restart_ReshufflesTheLayout_Reproducibly\r\n"
+    },
+    {
+      "name": "StartWithAnotherMode_MidGame_BeginsANewGameInThatMode",
+      "fullName": "MemoryMatch.Tests.RestartTests.StartWithAnotherMode_MidGame_BeginsANewGameInThatMode",
+      "status": "Passed",
+      "duration": 0.0001654,
+      "message": null,
+      "stackTrace": null,
+      "output": "[unity-cli-bridge][TestExecutionHandler] Test started: MemoryMatch.Tests.RestartTests.StartWithAnotherMode_MidGame_BeginsANewGameInThatMode\r\n"
+    },
+    {
+      "name": "AfterTheGameEnds_NoInputIsAccepted",
+      "fullName": "MemoryMatch.Tests.ResultTests.AfterTheGameEnds_NoInputIsAccepted",
+      "status": "Passed",
+      "duration": 0.0003375,
+      "message": null,
+      "stackTrace": null,
+      "output": "[unity-cli-bridge][TestExecutionHandler] Test started: MemoryMatch.Tests.ResultTests.AfterTheGameEnds_NoInputIsAccepted\r\n"
+    },
+    {
+      "name": "Decide_HigherScoreWins_EqualScoreIsDraw",
+      "fullName": "MemoryMatch.Tests.ResultTests.Decide_HigherScoreWins_EqualScoreIsDraw",
+      "status": "Passed",
+      "duration": 0.0001702,
+      "message": null,
+      "stackTrace": null,
+      "output": "[unity-cli-bridge][TestExecutionHandler] Test started: MemoryMatch.Tests.ResultTests.Decide_HigherScoreWins_EqualScoreIsDraw\r\n"
+    },
+    {
+      "name": "GameIsInProgress_UntilLastPairIsTaken",
+      "fullName": "MemoryMatch.Tests.ResultTests.GameIsInProgress_UntilLastPairIsTaken",
+      "status": "Passed",
+      "duration": 0.0003149,
+      "message": null,
+      "stackTrace": null,
+      "output": "[unity-cli-bridge][TestExecutionHandler] Test started: MemoryMatch.Tests.ResultTests.GameIsInProgress_UntilLastPairIsTaken\r\n"
+    },
+    {
+      "name": "Player1TakesEverything_Player1Wins_With550",
+      "fullName": "MemoryMatch.Tests.ResultTests.Player1TakesEverything_Player1Wins_With550",
+      "status": "Passed",
+      "duration": 0.0001987,
+      "message": null,
+      "stackTrace": null,
+      "output": "[unity-cli-bridge][TestExecutionHandler] Test started: MemoryMatch.Tests.ResultTests.Player1TakesEverything_Player1Wins_With550\r\n"
+    },
+    {
+      "name": "Player2TakesEverything_Player2Wins",
+      "fullName": "MemoryMatch.Tests.ResultTests.Player2TakesEverything_Player2Wins",
+      "status": "Passed",
+      "duration": 0.0002111,
+      "message": null,
+      "stackTrace": null,
+      "output": "[unity-cli-bridge][TestExecutionHandler] Test started: MemoryMatch.Tests.ResultTests.Player2TakesEverything_Player2Wins\r\n"
+    },
+    {
+      "name": "SplitGame_HigherScoreWins",
+      "fullName": "MemoryMatch.Tests.ResultTests.SplitGame_HigherScoreWins",
+      "status": "Passed",
+      "duration": 0.0003824,
+      "message": null,
+      "stackTrace": null,
+      "output": "[unity-cli-bridge][TestExecutionHandler] Test started: MemoryMatch.Tests.ResultTests.SplitGame_HigherScoreWins\r\n"
+    },
+    {
+      "name": "EditModeTestsRun",
+      "fullName": "MemoryMatch.Tests.SetupTests.EditModeTestsRun",
+      "status": "Passed",
+      "duration": 0.0003462,
+      "message": null,
+      "stackTrace": null,
+      "output": "[unity-cli-bridge][TestExecutionHandler] Test started: MemoryMatch.Tests.SetupTests.EditModeTestsRun\r\n"
+    }
+  ]
+}
